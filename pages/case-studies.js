@@ -3,15 +3,15 @@
 import Layout from "../components/layout"
 import { css, jsx } from "@emotion/react"
 
-const About = () => (
+const CaseStudy = () => (
     <Layout>
         <h1
             css={css`
               color: white;
               `}
         >
-            About</h1>
+            Case Studies</h1>
     </Layout>
 )
 
-export default About
+export default CaseStudy

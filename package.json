@@ -14,6 +14,11 @@
         "commit:pre": "npm run prettify"
     },
     "dependencies": {
+        "@emotion-icons/fa-brands": "^3.6.0",
+        "@emotion-icons/fa-regular": "^3.6.0",
+        "@emotion-icons/fa-solid": "^3.13.0",
+        "@emotion/react": "^11.1.5",
+        "@emotion/styled": "^11.1.5",
         "corejs": "^1.0.0",
         "next": "^9.5.2",
         "next-i18next": "^6.0.2",
