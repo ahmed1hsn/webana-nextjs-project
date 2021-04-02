@@ -7,12 +7,13 @@ export const globalStyles = (
       html,
       body {
         /* padding: 3rem 1rem; */
+        color: white;
         box-sizing: border-box;
         margin: 0;
         background: #000d23;
         min-height: 100%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 24px;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        font-size: 16px;
       }
       a {
         text-decoration: none;
