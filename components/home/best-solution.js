@@ -5,36 +5,17 @@ import Image from "next/image"
 import styled from "@emotion/styled"
 import { Button } from "../../shared/button"
 
-const base = css`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: min-content;
-  padding: 1rem;
-  margin-bottom: 4rem;
-`
-
-const Post = () => (
+const BestSolution = () => (
     <div
-        css={base}
+        css={css`
+          padding: 0.5rem;`}
     >
         <div
             css={css`
-              width: 400px;
-              margin-left: 10rem;
+              /* padding: 0.5rem; */
               `}
         >
-            <Image
-                src="/webana-assets/fantasized-ideas-turn-into-reality.png"
-                // layout="fill"
-                width={554}
-                height={634}
-            />
-        </div>
-        <div
-            css={css`
-              padding: 6rem;
-              `}
-        >
+
             <div
                 css={css`
                   font-family: 'Green Lantern';
@@ -45,13 +26,17 @@ const Post = () => (
                 FANTASIZED IDEAS TURN INTO REALITY</div>
             <div
                 css={css`
-                  padding: 1rem 0;`}>
+                  padding-bottom: 0.5rem`}>
                 Online exposure is the best promotion for your business at present. And Webanah is your superpower to improve your online presence. We work as a part of your business team to understand your goals and market and provide a complete package of services that would work as a booster in whole to take your business to a higher rank on search engines. We provide detailed services of web development, content marketing, SEO, branding and design, social media marketing, app development, and consulting. So, if you are looking to boost your business and website, Webanah is the best resort for your business with experienced designers and marketers on board.
             </div>
         </div>
-
-
+        <Image
+            src="/webana-assets/fantasized-ideas-turn-into-reality.png"
+            layout="intrinsic"
+            width={554}
+            height={634}
+        />
     </div>
 )
 
-export { Post }
+export default BestSolution

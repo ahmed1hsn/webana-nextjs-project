@@ -7,6 +7,7 @@ import * as faRegular from '@emotion-icons/fa-regular'
 import * as faSolid from '@emotion-icons/fa-solid'
 import { useRef, useState } from 'react'
 import Link from "next/link"
+import Image from "next/image"
 import useOnClickOutside from "../shared/use-onclickoutside"
 
 // TODO Sidebar
@@ -30,16 +31,6 @@ export const Item = styled.div`
     filter: drop-shadow(0 0 0.4rem white);
   }
 `
-const MyLink = props => (
-  <Link
-    className={{
-      color: 'white',
-      background: 'greenyellow',
-      fontSize: '2rem'
-    }}
-    {...props}
-  />
-)
 
 export const Sidebar = (props) => {
 
@@ -62,14 +53,21 @@ export const Sidebar = (props) => {
     return (
       <Container onClick={() => console.log('Container')} ref={ref}>
         <Item onClick={() => setOpen(false)}><faSolid.Times css={base} size="24" /></Item>
-        <Item>LOGO</Item>
-        <Item><MyLink href="/">Home</MyLink></Item>
-        <Item><Link href="/about">About Us</Link></Item>
-        <Item><Link href="/services">Services</Link></Item>
-        <Item><Link href="/portfolio">Portfolio</Link></Item>
-        <Item><Link href="/case-studies">Case Studies</Link></Item>
-        <Item><Link href="/blogs">Blogs</Link></Item>
-        <Item><Link href="/contact">Contact Us</Link></Item>
+        <Item>
+          <Image
+            src="/webana-assets/webanah-logo.png"
+            width={63}
+            height={65}
+            layout="fixed"
+          />
+        </Item>
+        <Item><Link href="/"><a>Home</a></Link></Item>
+        <Item><Link href="/about"><a>About Us</a></Link></Item>
+        <Item><Link href="/services"><a>Services</a></Link></Item>
+        <Item><Link href="/portfolio"><a>Portfolio</a></Link></Item>
+        <Item><Link href="/case-studies"><a>Case Studies</a></Link></Item>
+        <Item><Link href="/blogs"><a>Blogs</a></Link></Item>
+        <Item><Link href="/contact"><a>Contact Us</a></Link></Item>
         <div
           css={css`
             display: flex;

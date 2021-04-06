@@ -1,11 +1,10 @@
 /** @jsx jsx */
 
-import { css, jsx } from "@emotion/react";
+import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import styled from "@emotion/styled"
 import { Button } from "../../shared/button"
 
-const Home = () => (
+const BusinessGrowthAgency = () => (
     <div
         css={css`
           padding: 0.5rem;`}
@@ -15,7 +14,6 @@ const Home = () => (
               /* padding: 0.5rem; */
               `}
         >
-
             <div
                 css={css`
                   font-family: 'Green Lantern';
@@ -23,7 +21,7 @@ const Home = () => (
                   font-size: 2rem;
                   `}
             >
-                CREATIVITY REALM
+                CALIFORNIA’S PREMIER BUSINESS GROWTH AGENCY
             </div>
 
             <div
@@ -31,7 +29,7 @@ const Home = () => (
                   padding-bottom: 0.5rem;
                   `}
             >
-                Webanah is your ultimate fantasy that has come alive. Your dream of having an established and attractive website design for your business with commendable online performance and abundant revenue is Webanah’s food for soul. Webanah use your dream to energize its webanarians who make your brand rule the online universe with engaging design, unparallel digital marketing strategies and position it to the throne of search engines' highest rank.
+                Welcome to Webanarium, a place where business growth ideas are transformed into reality with a potion of updated development strategies and a marketing magic spell of Webanah, to reach the universe of leading brands.
             </div>
             <div
                 css={css`
@@ -41,14 +39,14 @@ const Home = () => (
         </div>
 
         <Image
-            css={css``}
-            src="/webana-assets/webanah-character3.png"
+            src="/webana-assets/webanah-character4.png"
             layout="intrinsic"
-            width={930}
-            height={872}
+            width={1020}
+            height={1471}
         />
 
     </div>
 )
 
-export default Home
+export default BusinessGrowthAgency
+

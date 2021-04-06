@@ -1,12 +1,13 @@
 /** @jsx jsx */
 
 import Layout from "../components/layout"
-import * as home from "../components/home/home"
-import * as wwd from "../components/home/what-we-do"
-import * as bs from "../components/home/best-solution"
-import * as wwso from "../components/home/why-we-stand-out"
+import Home from "../components/home/home"
+import WhatWeDo from "../components/home/what-we-do"
+import BestSolution from "../components/home/best-solution"
+import WhyWeStandOut from "../components/home/why-we-stand-out"
 import { css, jsx } from "@emotion/react"
 import React from "react";
+import Head from "next/head"
 // import Layout from "../src/components/Main-Components/Layout";
 // import Link from "next/link"
 
@@ -14,11 +15,15 @@ function Main({ ...props }) {
 	return (
 		<>
 			{/* <Layout /> */}
+			<Head>
+				<title>Home</title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
 			<Layout>
-				<home.Post />
-				<wwd.Post />
-				<bs.Post />
-				<wwso.Post />
+				<Home />
+				<WhatWeDo />
+				<BestSolution />
+				<WhyWeStandOut />
 			</Layout>
 		</>
 	);

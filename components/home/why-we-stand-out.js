@@ -6,11 +6,11 @@ import styled from "@emotion/styled"
 
 const base = css`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  padding: 5rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
   color: lightgrey;
+  margin-bottom: 4rem;
   > div {
       border: 0.01rem solid grey;
       border-radius: 1rem;
@@ -24,7 +24,7 @@ const base = css`
   }
 `
 
-const Post = () => (
+const WhyWeStandOut = () => (
     <div>
         <div
             css={css`
@@ -32,9 +32,12 @@ const Post = () => (
               font-family: 'Green Lantern';
               color: #16f533;
               font-size: 2rem;
+              padding: 0.5rem;
               `}
         >
-            WHY WE STAND OUT</div>
+            WHY WE STAND OUT
+        </div>
+
         <div css={base}>
             <div>
                 <div>
@@ -51,9 +54,11 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    BEST QUALITY</div>
+                    BEST QUALITY
+                </div>
                 <div>Our team never rests until the clients are satisfied with the work. We stand by our work and provide best possible outcomes for client’s business with limitless edits and claims according to their needs.</div>
             </div>
+
             <div>
                 <div>
                     <Image
@@ -69,9 +74,11 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    GUARANTEED RESULTS</div>
+                    GUARANTEED RESULTS
+                </div>
                 <div>With our dynamic developing and marketing strategies that are curated keeping the brand image and target audience in mind, we strive to achieve successful outcomes.</div>
             </div>
+
             <div>
                 <div>
                     <Image
@@ -87,9 +94,11 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    FAST RESPONSE</div>
+                    FAST RESPONSE
+                </div>
                 <div>Webanah considers clients its utmost priority hence, our team is always available to cater to our clients right away. </div>
             </div>
+
             <div>
                 <div>
                     <Image
@@ -106,9 +115,11 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    EXCELLENT DESIGN</div>
+                    EXCELLENT DESIGN
+                </div>
                 <div>User experience is the eminent feature of your website that would either make or break your audience. Our team of experienced web designers makes sure to deliver an excellent yet user-friendly web design. </div>
             </div>
+
             <div>
                 <div>
                     <Image
@@ -124,9 +135,11 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    PERFECT SOLUTIONS</div>
+                    PERFECT SOLUTIONS
+                </div>
                 <div>Webanah is your savior of all your website design and its performance problems. Our skilled team provides efficient solutions and consultations to embark your brand on a unique identity journey. </div>
             </div>
+
             <div>
                 <div>
                     <Image
@@ -142,11 +155,13 @@ const Post = () => (
                       font-size: 1rem;
                   `}
                 >
-                    PROFESSIONAL CONSULTANCY</div>
+                    PROFESSIONAL CONSULTANCY
+                </div>
                 <div>Apart from commendable designing and digital marketing services Webanah is always here to answer all your queries. Our experienced team has proficiency in business consultancy and assist specifically according to your brand and target market. </div>
             </div>
+
         </div>
     </div>
 )
 
-export { Post }
+export default WhyWeStandOut

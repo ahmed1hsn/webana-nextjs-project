@@ -1,17 +1,33 @@
 /** @jsx jsx */
 
-import Layout from "../components/layout"
 import { css, jsx } from "@emotion/react"
+import Head from "next/head"
+import Layout from "../components/layout"
+import BusinessGrowthAgency from "../components/about-us/business-growth-agency"
+import AboutUs from "../components/about-us/about-us"
+import OurMission from "../components/about-us/our-mission"
+import OurCoreValues from "../components/about-us/our-core-values"
+import BuildTheBestExperience from "../components/about-us/build-the-best-experience"
+import LetsWorkTogether from "../components/about-us/lets-work-together"
 
 const About = () => (
-    <Layout>
-        <h1
+    <>
+        <Head>
+            <title>About Us</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
+        <Layout>
+            <BusinessGrowthAgency />
+            <AboutUs />
+            <OurMission />
+            <OurCoreValues />
+            <div
             css={css`
-              color: white;
-              `}
-        >
-            About</h1>
-    </Layout>
+              padding: 1rem;`}></div>
+            <BuildTheBestExperience />
+            <LetsWorkTogether />
+        </Layout>
+    </>
 )
 
 export default About
