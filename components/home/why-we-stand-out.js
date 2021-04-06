@@ -7,12 +7,16 @@ import styled from "@emotion/styled"
 const base = css`
   display: grid;
   grid-template-columns: 1fr;
+  @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
   grid-gap: 0.5rem;
   padding: 0.5rem;
   color: lightgrey;
   margin-bottom: 4rem;
   > div {
       border: 0.01rem solid grey;
+      text-align: center;
       border-radius: 1rem;
       &:hover {
         color: #f8f8ff;

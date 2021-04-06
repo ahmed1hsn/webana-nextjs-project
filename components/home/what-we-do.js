@@ -8,11 +8,20 @@ import { Button } from "../../shared/button"
 const WhatWeDo = () => (
     <div
         css={css`
-        padding: 0.5rem;`}
+        padding: 0.5rem;
+        @media (min-width: 1200px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            }
+            `}
     >
         <div
             css={css`
               /* padding: 0.5rem; */
+              align-self: center;
+              @media (min-width: 1200px) {
+                  margin-left: 1rem;
+              }
               `}
         >
             <div
@@ -33,10 +42,11 @@ const WhatWeDo = () => (
             <div
                 css={css`
                   text-align: center;`}>
-                <Button>Learn More</Button>
             </div>
         </div>
-        <div>
+        <div
+            css={css`
+              justify-self: center;`}>
             <Image
                 src="/webana-assets/webanah-character2.png"
                 layout="intrinsic"

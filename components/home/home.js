@@ -8,11 +8,20 @@ import { Button } from "../../shared/button"
 const Home = () => (
     <div
         css={css`
-          padding: 0.5rem;`}
+          padding: 0.5rem;
+          @media (min-width: 1200px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+          }
+          `}
     >
         <div
             css={css`
               /* padding: 0.5rem; */
+              align-self: center;
+              @media (min-width: 1200px) {
+                  margin-left: 1rem;
+              }
               `}
         >
 
@@ -36,17 +45,20 @@ const Home = () => (
             <div
                 css={css`
                   text-align: center;`}>
-                <Button>Contact Us</Button>
             </div>
         </div>
-
-        <Image
-            css={css``}
-            src="/webana-assets/webanah-character3.png"
-            layout="intrinsic"
-            width={930}
-            height={872}
-        />
+        <div
+            css={css`
+              padding: 1rem;
+              justify-self: center;`}>
+            <Image
+                css={css``}
+                src="/webana-assets/webanah-character3.png"
+                layout="intrinsic"
+                width={930}
+                height={872}
+            />
+        </div>
 
     </div>
 )
