@@ -13,7 +13,7 @@ const LetsWorkTogether = () => (
     >
         <div
             css={css`
-              font-family: 'Green Lantern;';
+              font-family: 'Green Lantern';
               color: #16f533;
               font-size: 2rem;
               `}
