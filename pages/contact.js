@@ -2,8 +2,10 @@
 
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
+import { Phone, MapMarkerAlt, Envelope } from "@emotion-icons/fa-solid"
 import Layout from "../components/layout"
 import { Button } from "../shared/button"
+
 
 const Contact = () => (
     <>
@@ -48,54 +50,178 @@ function Form() {
     return (
         <form // onSubmit={registerUser}
             css={css`
-              display: flex;
-              flex-direction: column;
+              display: grid;
+              grid-template-columns: 1fr;
+              @media (min-width: 768px) {
+                  grid-template-columns: 1fr 1fr;
+              }
+              @media (min-width: 1200px) {
+                  grid-template-columns: 1fr 1fr 1fr;
+              }
+              grid-gap: 0.5rem;
               padding: 0 0.5rem;
               margin-bottom: 1rem;
-              > label {
+              & > div {
+                display: flex;
+                flex-direction: column;
+              & > label {
                   font-family: 'Green Lantern';
                   font-style: oblique 40deg;
                   color: #16f533;
                   padding-top: 0.5rem;
               }
-              > input {
+              & > textarea {
                   padding: 1rem;
-                  border-radius: 1rem;
-                  &:focus {
-                      border-color: #16f533;
-                      outline: none;
-                  }
-              }
-              > textarea {
-                  padding: 1rem;
+                  resize: none;
                   border-radius: 1rem;
                   margin-bottom: 1rem;
                   &:focus {
                       border-color: #16f533;
                       outline: none;
                   }
-              }`}>
+              }
+              & > input {
+                  padding: 1rem;
+                  border-radius: 1rem;
+                  &:focus {
+                      border-color: #16f533;
+                      outline: none;
+                  }
+              }
+              }
+              `}>
+            <div>
+                <label htmlFor="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="John" autoComplete="name" required />
+            </div>
+            <div>
+                <label htmlFor="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Doe" autoComplete="name" required />
+            </div>
+            <div
+                css={css`
+                  @media (min-width: 768px) {
+                      grid-column: 1 / 2;
+                  }
+                  `}>
+                <label htmlFor="email">Email Address</label>
+                <input id="email" name="email" type="email" placeholder="johndoe@gmail.com" autoComplete="email" required />
+            </div>
+            <div>
+                <label htmlFor="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="I have a question about..." required />
+            </div>
+            <div
+                css={css`
+                  @media (min-width: 768px) {
+                      grid-column: 1 / 3;
+                  }
+                  `}>
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" type="text" placeholder="Details..."
+                    rows={15} required />
+                <div
+                    css={css`
+                      text-align: center;
+                      `}>
+                    <Button
+                        css={css`
+                          padding: 0.5rem 2rem;
+                          margin-bottom: 2rem;
+                          @media (min-width: 1200px) {
+                              margin-bottom: 0;
+                          }
+                          `} type="submit" primary>Submit</Button>
+                </div>
+            </div>
 
-            <label htmlFor="firstName">First Name</label>
-            <input id="firstName" name="firstName" type="text" placeholder="John" autoComplete="name" required />
-
-            <label htmlFor="lastName">Last Name</label>
-            <input id="lastName" name="lastName" type="text" placeholder="Doe" autoComplete="name" required />
-
-            <label htmlFor="email">Email Address</label>
-            <input id="email" name="email" type="email" placeholder="johndoe@gmail.com" autoComplete="email" required />
-
-            <label htmlFor="subject">Subject</label>
-            <input id="subject" name="subject" type="text" placeholder="I have a question about..." required />
-
-            <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" type="text" placeholder="Details..."
-            rows={15} required />
-
-            <Button type="submit" primary>Submit</Button>
+            <div
+                css={css`
+                  gap: 2rem;
+                  @media (min-width: 768px) {
+                      grid-column: 1 / 3;
+                      grid-row: 4 / 5;
+                  }
+                  @media (min-width: 1200px) {
+                    padding-top: 2rem;
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 4;
+                  }
+                  /* justify-content: space-around; */
+                  & > div {
+                      text-align: center;
+                      border: 0.05rem solid grey;
+                      border-radius: 1rem;
+                      &:hover {
+                          border: 0.05rem solid #16f533;
+                      }
+                      padding: 0.5rem;
+                      div:nth-child(2) {
+                        font-family: 'Green Lanter';
+                        color: #16f533;
+                      }
+                      & > div {
+                          padding: 0.5rem;
+                          }
+                          }`
+                }
+            >
+                <div>
+                    <Phone size="24" />
+                    <div>Phone</div>
+                    <div>0321-1234567</div>
+                </div>
+                <div>
+                    <MapMarkerAlt size="24" />
+                    <div>Location</div>
+                    <div>magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque</div>
+                </div>
+                <div>
+                    <Envelope size="24" />
+                    <div>Email</div>
+                    <div>webanah@gmail.com</div>
+                </div>
+            </div>
 
         </form>
     )
 }
+
+const ContactData = () => (
+    <div
+        css={css`
+          display: grid;
+          grid-gap: 0.5rem;
+          align-content: space-around;
+          & > div {
+              padding: 0.5rem;
+              text-align: center;
+              border: 0.05rem solid grey;
+              border-radius: 1rem;
+              div:nth-child(2) {
+                  font-family: 'Green Lanter';
+                  color: #16f533;
+              }
+              & > div {
+                  padding: 0.5rem;
+              }
+          }`}>
+        <div>
+            <Phone size="24" />
+            <div>Phone</div>
+            <div>0321-1234567</div>
+        </div>
+        <div>
+            <MapMarkerAlt size="24" />
+            <div>Location</div>
+            <div>magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque</div>
+        </div>
+        <div>
+            <Envelope size="24" />
+            <div>Email</div>
+            <div>webanah@gmail.com</div>
+        </div>
+    </div>
+)
 
 export default Contact
