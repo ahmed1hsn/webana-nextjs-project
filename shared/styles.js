@@ -7,7 +7,7 @@ export const globalStyles = (
       @font-face {
         font-family: 'Green Lantern';
         src: url('/fonts/GREEN_LANTERN_MOVIE[1].ttf') format('truetype');
-      },
+      }
       html,
       body {
         /* padding: 3rem 1rem; */

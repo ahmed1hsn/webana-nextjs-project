@@ -8,11 +8,21 @@ import { Button } from "../../shared/button"
 const AppDevelopment = () => (
     <div
         css={css`
-          padding: 0.5rem;`}
+          display: grid;
+          padding: 0.5rem;
+          @media (min-width: 1200px) {
+              grid-template-columns: 1fr 1fr;
+              margin-bottom: 5rem;
+          }
+          `}
     >
         <div
             css={css`
               /* padding: 0.5rem; */
+              align-self: center;
+              @media (min-width: 1200px) {
+                  margin-left: 1rem;
+              }
               `}
         >
             <div
@@ -22,7 +32,8 @@ const AppDevelopment = () => (
                   font-size: 2rem;
                   `}
             >
-                APP DEVELOPMENT</div>
+                APP DEVELOPMENT
+            </div>
             <div
                 css={css`
                   padding-bottom: 0.5rem`}
@@ -31,12 +42,20 @@ const AppDevelopment = () => (
                 Companies work with Webanah to augment their app and web development needs because of our reputable team and trusted end product. Reach out to us if you are looking to design an app for your business or want to redesign your existing app into an updated one with effective framework and strategy. Webanah is always excited to have the back of its clients.
             </div>
         </div>
-        <Image
-            src="/images/app-development.png"
-            layout="intrinsic"
-            width={788}
-            height={464}
-        />
+
+        <div
+            css={css`
+              padding: 20%;
+              justify-self: center;
+              `}
+        >
+            <Image
+                src="/images/app-development.png"
+                layout="intrinsic"
+                width={788}
+                height={464}
+            />
+        </div>
     </div>
 )
 
