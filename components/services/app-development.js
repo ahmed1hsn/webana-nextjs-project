@@ -32,7 +32,7 @@ const AppDevelopment = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/app-development.png"
+            src="/images/app-development.png"
             layout="intrinsic"
             width={788}
             height={464}

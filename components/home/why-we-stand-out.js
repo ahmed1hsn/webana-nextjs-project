@@ -7,6 +7,9 @@ import styled from "@emotion/styled"
 const base = css`
   display: grid;
   grid-template-columns: 1fr;
+  @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+  }
   @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
   }
@@ -46,7 +49,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/best-quality.png"
+                        src="/images/best-quality.png"
                         width={49}
                         height={56}
                     />
@@ -66,7 +69,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/guaranteed-results.png"
+                        src="/images/guaranteed-results.png"
                         width={42}
                         height={57}
                     />
@@ -86,7 +89,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/fast-response.png"
+                        src="/images/fast-response.png"
                         width={50}
                         height={50}
                     />
@@ -106,7 +109,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/excellent-design.png"
+                        src="/images/excellent-design.png"
                         width={53}
                         height={50}
                     />
@@ -127,7 +130,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/perfect-solutions.png"
+                        src="/images/perfect-solutions.png"
                         width={46}
                         height={56}
                     />
@@ -147,7 +150,7 @@ const WhyWeStandOut = () => (
             <div>
                 <div>
                     <Image
-                        src="/webana-assets/professional-consultancy.png"
+                        src="/images/professional-consultancy.png"
                         width={44}
                         height={59}
                     />

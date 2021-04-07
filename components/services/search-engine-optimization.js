@@ -33,7 +33,7 @@ const SearchEngineOptimization = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/SEO.png"
+            src="/images/SEO.png"
             layout="intrinsic"
             width={685}
             height={738}

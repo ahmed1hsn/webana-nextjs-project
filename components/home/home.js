@@ -8,10 +8,10 @@ import { Button } from "../../shared/button"
 const Home = () => (
     <div
         css={css`
+          display: grid;
           padding: 0.5rem;
           @media (min-width: 1200px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+              grid-template-columns: 1fr 1fr;
           }
           `}
     >
@@ -24,7 +24,6 @@ const Home = () => (
               }
               `}
         >
-
             <div
                 css={css`
                   font-family: 'Green Lantern';
@@ -44,16 +43,20 @@ const Home = () => (
             </div>
             <div
                 css={css`
-                  text-align: center;`}>
+                  text-align: center;
+                  `}
+            >
             </div>
         </div>
         <div
             css={css`
               padding: 1rem;
-              justify-self: center;`}>
+              justify-self: center;
+              `}
+        >
             <Image
                 css={css``}
-                src="/webana-assets/webanah-character3.png"
+                src="/images/webanah-character3.png"
                 layout="intrinsic"
                 width={930}
                 height={872}

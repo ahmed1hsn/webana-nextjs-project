@@ -8,9 +8,9 @@ import { Button } from "../../shared/button"
 const BestSolution = () => (
     <div
         css={css`
+          display: grid;
           padding: 0.5rem;
           @media (min-width: 1200px) {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             grid-row-start: end;
           }
@@ -40,12 +40,14 @@ const BestSolution = () => (
         <div
             css={css`
               padding: 6rem;
-              grid-row-start: -1;
               justify-self: center;
+              @media (min-width: 1200px) {
+                  grid-row-start: -1;
+              }
               `}
         >
             <Image
-                src="/webana-assets/fantasized-ideas-turn-into-reality.png"
+                src="/images/fantasized-ideas-turn-into-reality.png"
                 layout="intrinsic"
                 width={554}
                 height={634}

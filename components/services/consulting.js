@@ -35,7 +35,7 @@ const Consulting = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/consulting.png"
+            src="/images/consulting.png"
             layout="intrinsic"
             width={668}
             height={653}

@@ -32,7 +32,7 @@ const ContentProduction = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/content-production.png"
+            src="/images/content-production.png"
             layout="intrinsic"
             width={477}
             height={518}

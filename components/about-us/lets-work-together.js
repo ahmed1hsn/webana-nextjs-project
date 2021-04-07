@@ -7,8 +7,9 @@ const LetsWorkTogether = () => (
     <div
         css={css`
           text-align: center;
-          padding: 0.5rem;
-          margin-bottom: 10rem;
+          padding: 2rem;
+          margin-top: 8rem;
+          margin-bottom: 15rem;
           `}
     >
         <div

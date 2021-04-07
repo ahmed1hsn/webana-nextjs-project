@@ -8,12 +8,12 @@ import { Button } from "../../shared/button"
 const WhatWeDo = () => (
     <div
         css={css`
-        padding: 0.5rem;
-        @media (min-width: 1200px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            }
-            `}
+          display: grid;
+          padding: 0.5rem;
+          @media (min-width: 1200px) {
+              grid-template-columns: 1fr 1fr;
+              }
+              `}
     >
         <div
             css={css`
@@ -41,14 +41,18 @@ const WhatWeDo = () => (
             </div>
             <div
                 css={css`
-                  text-align: center;`}>
+                  text-align: center;
+                  `}
+            >
             </div>
         </div>
         <div
             css={css`
-              justify-self: center;`}>
+              justify-self: center;
+              `}
+        >
             <Image
-                src="/webana-assets/webanah-character2.png"
+                src="/images/webanah-character2.png"
                 layout="intrinsic"
                 width={654}
                 height={589}

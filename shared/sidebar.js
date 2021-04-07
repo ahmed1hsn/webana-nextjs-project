@@ -55,7 +55,7 @@ export const Sidebar = (props) => {
         <Item onClick={() => setOpen(false)}><faSolid.Times css={base} size="24" /></Item>
         <Item>
           <Image
-            src="/webana-assets/webanah-logo.png"
+            src="/images/webanah-logo.png"
             width={63}
             height={65}
             layout="fixed"

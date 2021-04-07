@@ -7,11 +7,20 @@ import { Button } from "../../shared/button"
 const AboutUs = () => (
     <div
         css={css`
-          padding: 0.5rem;`}
+          display: grid;
+          padding: 0.5rem;
+          @media (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+            }
+            `}
     >
         <div
             css={css`
               /* padding: 0.5rem; */
+              align-self: center;
+              @media (min-width: 1200px) {
+                  margin-left: 1rem;
+              }
               `}
         >
             <div
@@ -37,13 +46,20 @@ const AboutUs = () => (
                 <Button>Contact Us</Button>
             </div>
         </div>
-
-        <Image
-            src="/webana-assets/webanah-character1.png"
-            layout="intrinsic"
-            width={1359}
-            height={1922}
-        />
+        <div
+            css={css`
+              padding: 1rem;
+              justify-self: center;
+              @media (min-width: 1200px) {
+                  margin-top: 20rem;
+              }`}>
+            <Image
+                src="/images/webanah-character1.png"
+                layout="intrinsic"
+                width={1359}
+                height={1922}
+            />
+        </div>
     </div>
 )
 

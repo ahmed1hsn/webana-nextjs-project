@@ -7,11 +7,20 @@ import { Button } from "../../shared/button"
 const BusinessGrowthAgency = () => (
     <div
         css={css`
-          padding: 0.5rem;`}
+          display: grid;
+          padding: 0.5rem;
+          @media (min-width: 1200px) {
+              grid-template-columns: 1fr 1fr;
+              grid-auto-rows: 90vh;
+          }`}
     >
         <div
             css={css`
               /* padding: 0.5rem; */
+              align-self: center;
+              @media (min-width: 1200px) {
+                  margin-left: 1rem;
+              }
               `}
         >
             <div
@@ -37,13 +46,17 @@ const BusinessGrowthAgency = () => (
                 <Button>Contact Us</Button>
             </div>
         </div>
-
-        <Image
-            src="/webana-assets/webanah-character4.png"
-            layout="intrinsic"
-            width={1020}
-            height={1471}
-        />
+        <div
+            css={css`
+              padding: 5rem;
+              justify-self: center;`}>
+            <Image
+                src="/images/webanah-character4.png"
+                layout="intrinsic"
+                width={1020}
+                height={1471}
+            />
+        </div>
 
     </div>
 )

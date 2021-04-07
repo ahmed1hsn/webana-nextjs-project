@@ -31,7 +31,7 @@ const WebDevelopment = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/web-development.png"
+            src="/images/web-development.png"
             layout="intrinsic"
             width={1142}
             height={915}

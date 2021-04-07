@@ -34,7 +34,7 @@ const SocialMediaManagement = () => (
             </div>
         </div>
         <Image
-            src="/webana-assets/social-media-management-icon.png"
+            src="/images/social-media-management-icon.png"
             layout="intrinsic"
             width={196}
             height={156}
