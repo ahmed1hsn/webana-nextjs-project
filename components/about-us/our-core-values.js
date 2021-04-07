@@ -14,15 +14,21 @@ const base = css`
           padding: 2rem;
       }
   }
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   padding: 0.5rem;
   color: lightgrey;
   & > div {
       border: 0.01rem solid grey;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
+      background-image: url('/images/core-value-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 2rem 0;
       &:hover {
         color: #f8f8ff;
-        border: 0.01rem solid #16f533;
+        border-left: 0.1rem solid #16f533;
+        border-right: 0.1rem solid #16f533;
       }
       & > div {
           padding: 0.5rem;
