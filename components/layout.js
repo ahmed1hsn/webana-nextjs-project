@@ -6,16 +6,25 @@ import { Button } from "../shared/button"
 import * as faSolid from "@emotion-icons/fa-solid"
 import { css, jsx } from "@emotion/react"
 import Link from "next/link"
+import MyParticles from "./particles";
 
 export default function Layout({ children }) {
     return (
         <div>
-
+            <div
+                css={css`
+                  position: fixed;
+                  /* z-index: 0; */
+                  `}
+            >
+                <MyParticles />
+            </div>
             <div
                 css={css`
                   display: flex;
                   justify-content: space-between;
                   padding: 1rem;
+                  position: relative;
                   `}
             >
                 <faSolid.Search
@@ -28,7 +37,9 @@ export default function Layout({ children }) {
                 <Link href="/contact"><Button primary>Contact Us</Button></Link>
             </div>
 
-            <div>{children}</div>
+            <div
+                css={css`
+                  position: relative;`}>{children}</div>
 
             <Sidebar />
 

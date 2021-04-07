@@ -23,7 +23,8 @@
         "next": "^10.1.3",
         "next-i18next": "^6.0.2",
         "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "react-tsparticles": "^1.25.0"
     },
     "devDependencies": {
         "babel-eslint": "^10.1.0",
