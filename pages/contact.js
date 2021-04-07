@@ -30,25 +30,36 @@ const Contact = () => (
     </>
 )
 function Form() {
-    const registerUser = async event => {
+    const onSubmit = async event => {
         event.preventDefault()
 
-        const res = await fetch('/api/register', {
-            body: JSON.stringify({
-                // name: event.target.name.value
-            }),
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            method: 'POST'
-        })
+        // const res = await fetch('/api/register', {
+        //     body: JSON.stringify({
+        //         // name: event.target.name.value
+        //     }),
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     method: 'POST'
+        // })
 
-        const result = await res.json()
+        // const result = await res.json()
         // result.user => 'Ada Lovelace'
+
+        // console.log(event.target.firstName.value)
+        console.log(
+            JSON.stringify({
+                firstName: event.target.firstName.value,
+                lastName: event.target.lastName.value,
+                email: event.target.email.value,
+                subject: event.target.subject.value,
+                message: event.target.message.value,
+            })
+        )
     }
 
     return (
-        <form // onSubmit={registerUser}
+        <form onSubmit={onSubmit}
             css={css`
               display: grid;
               grid-template-columns: 1fr;
@@ -71,9 +82,9 @@ function Form() {
                   padding-top: 0.5rem;
               }
               & > textarea {
-                  padding: 1rem;
+                  padding: 0.75rem;
                   resize: none;
-                  border-radius: 1rem;
+                  border-radius: 0.5rem;
                   margin-bottom: 1rem;
                   &:focus {
                       border-color: #16f533;
@@ -81,8 +92,8 @@ function Form() {
                   }
               }
               & > input {
-                  padding: 1rem;
-                  border-radius: 1rem;
+                  padding: 0.75rem;
+                  border-radius: 0.5rem;
                   &:focus {
                       border-color: #16f533;
                       outline: none;
