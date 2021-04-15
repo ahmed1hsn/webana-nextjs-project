@@ -29,7 +29,7 @@ const Home = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 3.75rem;
+                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
                   `}
             >
                 CREATIVITY REALM

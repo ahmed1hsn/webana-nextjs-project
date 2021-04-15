@@ -28,7 +28,7 @@ const AboutUs = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: transparent;
-                  font-size: 3.75rem;
+                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
 
                   -webkit-text-stroke: 0.05rem #16f533;
                   `}

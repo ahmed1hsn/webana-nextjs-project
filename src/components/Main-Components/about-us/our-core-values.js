@@ -35,7 +35,7 @@ const base = css`
       }
       & > div:nth-of-type(1) {
           font-family: 'Green Lantern';
-          font-size: 2rem;
+          font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
           color: #16f533;
           text-align: center;
       }
@@ -51,7 +51,7 @@ const OurCoreValues = () => (
         <div
             css={css`
               font-family: 'Green Lantern';
-              font-size: 3.75rem;
+              font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
               text-align: center;
               color: transparent;
               -webkit-text-stroke: 0.05rem #16f533;
