@@ -18,6 +18,7 @@ const LetsWorkTogether = () => (
               font-family: 'Green Lantern';
               color: #16f533;
               font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
+              letter-spacing: 0.1rem;
               `}
         >
             TRAPPED IN THE UNIVERSE OF COMPETITERS?

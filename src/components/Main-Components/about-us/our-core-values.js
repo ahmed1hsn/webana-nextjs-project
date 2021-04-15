@@ -36,8 +36,10 @@ const base = css`
       & > div:nth-of-type(1) {
           font-family: 'Green Lantern';
           font-size: clamp(1rem, -0.875rem + 8.333vw, 2rem);
+          letter-spacing: 0.1rem;
           color: #16f533;
           text-align: center;
+
       }
   }
 `
@@ -55,6 +57,7 @@ const OurCoreValues = () => (
               text-align: center;
               color: transparent;
               -webkit-text-stroke: 0.05rem #16f533;
+              letter-spacing: 0.1rem;
               `}
         >
             Our Core Values
