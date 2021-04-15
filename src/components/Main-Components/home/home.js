@@ -3,7 +3,8 @@
 import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
+import Link from "next/link";
 
 const Home = () => (
     <div
@@ -28,7 +29,7 @@ const Home = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 CREATIVITY REALM
@@ -36,7 +37,7 @@ const Home = () => (
 
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Webanah is your ultimate fantasy that has come alive. Your dream of having an established and attractive website design for your business with commendable online performance and abundant revenue is Webanah’s food for soul. Webanah use your dream to energize its webanarians who make your brand rule the online universe with engaging design, unparallel digital marketing strategies and position it to the throne of search engines' highest rank.
@@ -47,6 +48,7 @@ const Home = () => (
                   `}
             >
             </div>
+            <Link href="/contact"><Button>Contact Us</Button></Link>
         </div>
         <div
             css={css`

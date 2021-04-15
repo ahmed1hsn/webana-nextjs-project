@@ -1,10 +1,10 @@
 /** @jsx jsx */
 
-import Navbar from "../src/components/navbar"
-import Home from "../src/components/home/home"
-import WhatWeDo from "../src/components/home/what-we-do"
-import BestSolution from "../src/components/home/best-solution"
-import WhyWeStandOut from "../src/components/home/why-we-stand-out"
+import Navbar from "../src/components/Sub-Components/navbar"
+import Home from "../src/components/Main-Components/home/home"
+import WhatWeDo from "../src/components/Main-Components/home/what-we-do"
+import BestSolution from "../src/components/Main-Components/home/best-solution"
+import WhyWeStandOut from "../src/components/Main-Components/home/why-we-stand-out"
 import { css, jsx } from "@emotion/react"
 import React from "react";
 import Head from "next/head"

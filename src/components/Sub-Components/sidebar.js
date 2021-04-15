@@ -8,7 +8,7 @@ import * as faSolid from '@emotion-icons/fa-solid'
 import { useRef, useState } from 'react'
 import Link from "next/link"
 import Image from "next/image"
-import useOnClickOutside from "../utils/use-onclickoutside"
+import useOnClickOutside from "../../utils/use-onclickoutside"
 
 // TODO Sidebar
 export const Container = styled.div`

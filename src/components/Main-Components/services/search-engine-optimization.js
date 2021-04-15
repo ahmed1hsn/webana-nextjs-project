@@ -3,7 +3,7 @@
 import { Search } from "@emotion-icons/fa-solid"
 import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 
 const SearchEngineOptimization = () => (
@@ -29,14 +29,14 @@ const SearchEngineOptimization = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 SEARCH ENGINE OPTIMIZATION
             </div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 While the best SEO strategies are research-driven, SEO is still a long way from an accurate science. In any case, there are sure some specific strategies you can hope to get from any advanced organization. Because of the differing levels of performance, and ranges of abilities in the business, outcomes, and ROI will fluctuate from one organization to another. In addition, an effective SEO organization should truly comprehend your business and examine your industry to accumulate working information on your topic.

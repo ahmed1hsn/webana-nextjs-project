@@ -3,8 +3,8 @@
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
 import { Phone, MapMarkerAlt, Envelope } from "@emotion-icons/fa-solid"
-import Navbar from "../src/components/navbar"
-import { Button } from "../src/components/button"
+import Navbar from "../src/components/Sub-Components/navbar"
+import { Button } from "../src/components/Sub-Components/button"
 
 
 const Contact = () => (
@@ -19,7 +19,7 @@ const Contact = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   text-align: center;
                   `}
             >

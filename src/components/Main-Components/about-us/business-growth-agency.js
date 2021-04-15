@@ -2,7 +2,8 @@
 
 import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import { Button } from "../button"
+import Link from "next/link"
+import { Button } from "../../Sub-Components/button"
 
 const BusinessGrowthAgency = () => (
     <div
@@ -27,7 +28,7 @@ const BusinessGrowthAgency = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 CALIFORNIA’S PREMIER BUSINESS GROWTH AGENCY
@@ -35,21 +36,25 @@ const BusinessGrowthAgency = () => (
 
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0 3rem;
                   `}
             >
                 Welcome to Webanarium, a place where business growth ideas are transformed into reality with a potion of updated development strategies and a marketing magic spell of Webanah, to reach the universe of leading brands.
             </div>
             <div
                 css={css`
-                  text-align: center;`}>
-                <Button>Contact Us</Button>
+                  text-align: center;
+                  `}
+            >
             </div>
+            <Link href="/contact"><Button>Contact Us</Button></Link>
         </div>
         <div
             css={css`
               padding: 5rem;
-              justify-self: center;`}>
+              justify-self: center;
+              `}
+        >
             <Image
                 src="/images/webanah-character4.png"
                 layout="intrinsic"

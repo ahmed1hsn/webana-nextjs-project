@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Button from "../src/components/Sub-Components/button";
+// import Button from "../src/components/Sub-Components/button";
 
 function SignUp() {
 	return (
@@ -9,7 +9,7 @@ function SignUp() {
 			<Link href="/">
 				<a>Home</a>
 			</Link>{" "}
-			<Button name="Submit" />
+			{/* <Button name="Submit" /> */}
 		</>
 	);
 }

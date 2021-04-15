@@ -29,7 +29,7 @@ const Post = () => (
         <div
             css={css`
               font-family: 'Green Lantern';
-              font-size: 2rem;
+              font-size: 3.75rem;
               text-align: center;
               color: #16f533;`}>Testimonials</div>
         <div

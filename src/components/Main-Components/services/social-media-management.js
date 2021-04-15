@@ -3,7 +3,7 @@
 import { Search } from "@emotion-icons/fa-solid"
 import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 
 const SocialMediaManagement = () => (
@@ -30,14 +30,14 @@ const SocialMediaManagement = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 SOCIAL MEDIA MANAGAMENT
             </div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 With an exceptional recommendation score by our trusted clients, Webanah is an extremely trustworthy choice for our clients to reach out for their social media management needs. Should you choose to avail of our services, we ensure that the company will help you improve your brand's awareness, revenue, customer loyalty, and more. More than 70% of customers resort to social media while purchasing through an online business. Whether you are familiar with your target audience and their demographics, our team of social media managers will take care of every aspect of your content and lead your strategy with an optimistic approach.

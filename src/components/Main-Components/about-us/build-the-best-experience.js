@@ -3,7 +3,7 @@
 import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 const BuildTheBestExperience = () => (
     <div
@@ -27,15 +27,16 @@ const BuildTheBestExperience = () => (
             <div
                 css={css`
                   font-family: 'Green Lantern';
-                  color: #16f533;
-                  font-size: 2rem;
+                  color: transparent;
+                  font-size: 3.75rem;
+                  -webkit-text-stroke: 0.05rem #16f533;
                   `}
             >
                 BUILD THE BEST EXPERIENCE
             </div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Webanah has built its galaxy of creativity and every member in the realm has been finely trained to deal with clients with an extremely creative and unique approach. Webanah treats every client separately with complete customization according to their business, needs, and strategies. It's our motto to work until the client gets complete satisfaction and sees the better performance of the website live. Webanah assures you complete personalization throughout the whole process and attention to every detail.

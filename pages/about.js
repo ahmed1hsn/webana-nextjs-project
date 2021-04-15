@@ -2,13 +2,13 @@
 
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
-import Navbar from "../src/components/navbar"
-import BusinessGrowthAgency from "../src/components/about-us/business-growth-agency"
-import AboutUs from "../src/components/about-us/about-us"
-import OurMission from "../src/components/about-us/our-mission"
-import OurCoreValues from "../src/components/about-us/our-core-values"
-import BuildTheBestExperience from "../src/components/about-us/build-the-best-experience"
-import LetsWorkTogether from "../src/components/about-us/lets-work-together"
+import Navbar from "../src/components/Sub-Components/navbar"
+import BusinessGrowthAgency from "../src/components/Main-Components/about-us/business-growth-agency"
+import AboutUs from "../src/components/Main-Components/about-us/about-us"
+import OurMission from "../src/components/Main-Components/about-us/our-mission"
+import OurCoreValues from "../src/components/Main-Components/about-us/our-core-values"
+import BuildTheBestExperience from "../src/components/Main-Components/about-us/build-the-best-experience"
+import LetsWorkTogether from "../src/components/Main-Components/about-us/lets-work-together"
 
 const About = () => (
     <>

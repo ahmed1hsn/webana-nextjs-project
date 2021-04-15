@@ -2,7 +2,7 @@
 
 import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 
 const ContentProduction = () => (
@@ -28,14 +28,14 @@ const ContentProduction = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 CONTENT PRODUCTION
             </div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Content decides whether your website will rank better on a search engine or not? Unique content marketing that entices customers as well as ranks high on google is something Webanah is proudly an expert in. Our team at Webanah wants to generate tangible changes for your business by creating the best possible content that may be required in your social media run.  The experts present here to ensure quality in their final products by keeping them one hundred percent unique. Engage with potential customers by using our special and on-brand social media content like custom images, thumbnails, social media posts, website content, and more.

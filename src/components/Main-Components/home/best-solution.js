@@ -3,7 +3,7 @@
 import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 const BestSolution = () => (
     <div
@@ -27,13 +27,13 @@ const BestSolution = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 FANTASIZED IDEAS TURN INTO REALITY</div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Online exposure is the best promotion for your business at present. And Webanah is your superpower to improve your online presence. We work as a part of your business team to understand your goals and market and provide a complete package of services that would work as a booster in whole to take your business to a higher rank on search engines. We provide detailed services of web development, content marketing, SEO, branding and design, social media marketing, app development, and consulting. So, if you are looking to boost your business and website, Webanah is the best resort for your business with experienced designers and marketers on board.

@@ -3,7 +3,8 @@
 import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
-import { Button } from "../button"
+import Link from "next/link"
+import { Button } from "../../Sub-Components/button"
 
 const WhatWeDo = () => (
     <div
@@ -28,13 +29,13 @@ const WhatWeDo = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 WHAT WE DO</div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Webanah is a digital superhero at your rescue for all the digital needs of your brand. With a professional and highly experienced team on board, Webanah provides you with ultimate marketing strategies for your website. Webanah takes your brand to the new heights of success by increasing the audience towards the website through specific promotional strategies like successful SEO, attractive branding, impeccable UI/UX designing, engaging content creation, responsive app development, and ideas-driven consultancy. Our team works untiringly until your website reaches desired results.
@@ -45,6 +46,7 @@ const WhatWeDo = () => (
                   `}
             >
             </div>
+            <Link href="/contact"><Button>Learn More</Button></Link>
         </div>
         <div
             css={css`

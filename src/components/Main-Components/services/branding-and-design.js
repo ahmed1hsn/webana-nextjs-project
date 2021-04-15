@@ -2,7 +2,7 @@
 
 import { css, jsx } from "@emotion/react"
 import Image from "next/image"
-import { Button } from "../button"
+import { Button } from "../../Sub-Components/button"
 
 
 const BrandingAndDesign = () => (
@@ -28,14 +28,14 @@ const BrandingAndDesign = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: 3.75rem;
                   `}
             >
                 BRANDING & DESIGN
             </div>
             <div
                 css={css`
-                  padding-bottom: 0.5rem;
+                  padding: 1rem 0;
                   `}
             >
                 Having a unique identity that is positioned into audience’s mind be it an enticing logo, attractive color palette or catchy taglines and headlines, merchandise, ATL and BTL activities all fall under branding and design department. Webanah is a leading branding and design company with an exceptional design team that creates original, intriguing, and innovative designs that capture the essence of your brand. The team’s designs help our customers in maximizing their revenues and engagement. In the modern world, your designs are your first interaction with your potential clients, making your designs the most important part of your company’s overview.

@@ -7,26 +7,29 @@ import styled from "@emotion/styled"
 const base = css`
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+  
   @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
   }
   @media (min-width: 1200px) {
       grid-template-columns: 1fr 1fr 1fr;
-      padding: 2rem;
+      padding: 1rem;
   }
-  grid-gap: 1rem;
-  padding: 0.5rem;
   ${'' /* color: lightgrey; */}
-  margin-bottom: 4rem;
+  ${'' /* margin-bottom: 4rem; */}
   > div {
       border: 0.01rem solid grey;
-      text-align: center;
+      ${'' /* text-align: center; */}
       border-radius: 0.5rem;
       background-image: url('/images/core-value-bg.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       padding: 2rem 0;
+      border-left: 0.1rem solid grey;
+      border-right: 0.1rem solid grey;
       &:hover {
         color: #f8f8ff;
         border-left: 0.1rem solid #16f533;
@@ -35,17 +38,29 @@ const base = css`
       > div {
           padding: 0.5rem;
       }
+      > div:nth-of-type(-n+2) {
+          text-align: center;
+      }
+      div:nth-of-type(2) {
+          font-family: 'Green Lantern';
+          color: #16f533;
+          font-size: 1rem;
+      }
   }
 `
 
 const WhyWeStandOut = () => (
-    <div>
+    <div
+        css={css`
+          /* padding: 5rem; */
+          `}>
         <div
             css={css`
               text-align: center;
               font-family: 'Green Lantern';
-              color: #16f533;
-              font-size: 2rem;
+              color: transparent;
+              -webkit-text-stroke: 0.05rem #16f533;
+              font-size: 3.75rem;
               padding: 0.5rem;
               `}
         >
@@ -61,13 +76,7 @@ const WhyWeStandOut = () => (
                         height={56}
                     />
                 </div>
-                <div
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     BEST QUALITY
                 </div>
                 <div>Our team never rests until the clients are satisfied with the work. We stand by our work and provide best possible outcomes for client’s business with limitless edits and claims according to their needs.</div>
@@ -81,13 +90,7 @@ const WhyWeStandOut = () => (
                         height={57}
                     />
                 </div>
-                <div
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     GUARANTEED RESULTS
                 </div>
                 <div>With our dynamic developing and marketing strategies that are curated keeping the brand image and target audience in mind, we strive to achieve successful outcomes.</div>
@@ -101,13 +104,7 @@ const WhyWeStandOut = () => (
                         height={50}
                     />
                 </div>
-                <div
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     FAST RESPONSE
                 </div>
                 <div>Webanah considers clients its utmost priority hence, our team is always available to cater to our clients right away. </div>
@@ -121,14 +118,7 @@ const WhyWeStandOut = () => (
                         height={50}
                     />
                 </div>
-                <div
-
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     EXCELLENT DESIGN
                 </div>
                 <div>User experience is the eminent feature of your website that would either make or break your audience. Our team of experienced web designers makes sure to deliver an excellent yet user-friendly web design. </div>
@@ -142,13 +132,7 @@ const WhyWeStandOut = () => (
                         height={56}
                     />
                 </div>
-                <div
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     PERFECT SOLUTIONS
                 </div>
                 <div>Webanah is your savior of all your website design and its performance problems. Our skilled team provides efficient solutions and consultations to embark your brand on a unique identity journey. </div>
@@ -162,13 +146,7 @@ const WhyWeStandOut = () => (
                         height={59}
                     />
                 </div>
-                <div
-                    css={css`
-                      font-family: 'Green Lantern';
-                      color: #16f533;
-                      font-size: 1rem;
-                  `}
-                >
+                <div>
                     PROFESSIONAL CONSULTANCY
                 </div>
                 <div>Apart from commendable designing and digital marketing services Webanah is always here to answer all your queries. Our experienced team has proficiency in business consultancy and assist specifically according to your brand and target market. </div>
