@@ -3,8 +3,8 @@
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
 import { Phone, MapMarkerAlt, Envelope } from "@emotion-icons/fa-solid"
-import Navbar from "../components/navbar"
-import { Button } from "../shared/button"
+import Navbar from "../src/components/navbar"
+import { Button } from "../src/components/button"
 
 
 const Contact = () => (

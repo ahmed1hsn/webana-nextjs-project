@@ -2,13 +2,13 @@
 
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
-import Navbar from "../components/navbar"
-import BusinessGrowthAgency from "../components/about-us/business-growth-agency"
-import AboutUs from "../components/about-us/about-us"
-import OurMission from "../components/about-us/our-mission"
-import OurCoreValues from "../components/about-us/our-core-values"
-import BuildTheBestExperience from "../components/about-us/build-the-best-experience"
-import LetsWorkTogether from "../components/about-us/lets-work-together"
+import Navbar from "../src/components/navbar"
+import BusinessGrowthAgency from "../src/components/about-us/business-growth-agency"
+import AboutUs from "../src/components/about-us/about-us"
+import OurMission from "../src/components/about-us/our-mission"
+import OurCoreValues from "../src/components/about-us/our-core-values"
+import BuildTheBestExperience from "../src/components/about-us/build-the-best-experience"
+import LetsWorkTogether from "../src/components/about-us/lets-work-together"
 
 const About = () => (
     <>
@@ -17,7 +17,7 @@ const About = () => (
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
         </Head>
-        <Navbar>
+        <Navbar background='/images/background2.png'>
             <BusinessGrowthAgency />
             <AboutUs />
             <OurMission />

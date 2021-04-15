@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import Navbar from "../components/navbar"
+import Navbar from "../src/components/navbar"
 import { css, jsx } from "@emotion/react"
 
 const Blogs = () => (
