@@ -1,17 +1,17 @@
 /** @jsx jsx */
 
-import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 import { css, jsx } from "@emotion/react"
 
 const Portfolio = () => (
-    <Layout>
+    <Navbar>
         <h1
             css={css`
               color: white;
               `}
         >
             Portfolio</h1>
-    </Layout>
+    </Navbar>
 )
 
 export default Portfolio

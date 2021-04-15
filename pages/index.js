@@ -1,6 +1,6 @@
 /** @jsx jsx */
 
-import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 import Home from "../components/home/home"
 import WhatWeDo from "../components/home/what-we-do"
 import BestSolution from "../components/home/best-solution"
@@ -20,12 +20,12 @@ function Main({ ...props }) {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
 			</Head>
-			<Layout>
+			<Navbar>
 				<Home />
 				<WhatWeDo />
 				<BestSolution />
 				<WhyWeStandOut />
-			</Layout>
+			</Navbar>
 		</>
 	);
 }

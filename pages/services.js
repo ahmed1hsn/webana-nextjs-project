@@ -2,7 +2,7 @@
 
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
-import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 import BrandingAndDesign from "../components/services/branding-and-design"
 import ContentProduction from "../components/services/content-production"
 import AppDevelopment from "../components/services/app-development"
@@ -19,7 +19,7 @@ const Services = () => (
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
         </Head>
-        <Layout>
+        <Navbar>
             <BrandingAndDesign />
             <ContentProduction />
             <AppDevelopment />
@@ -27,7 +27,7 @@ const Services = () => (
             <SearchEngineOptimization />
             <SocialMediaManagement />
             <Consulting />
-        </Layout>
+        </Navbar>
     </>
 )
 

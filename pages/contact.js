@@ -3,7 +3,7 @@
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
 import { Phone, MapMarkerAlt, Envelope } from "@emotion-icons/fa-solid"
-import Layout from "../components/layout"
+import Navbar from "../components/navbar"
 import { Button } from "../shared/button"
 
 
@@ -14,7 +14,7 @@ const Contact = () => (
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             <link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
         </Head>
-        <Layout>
+        <Navbar>
             <div
                 css={css`
                   font-family: 'Green Lantern';
@@ -26,7 +26,7 @@ const Contact = () => (
                 CONTACT US
             </div>
             <Form />
-        </Layout>
+        </Navbar>
     </>
 )
 function Form() {
