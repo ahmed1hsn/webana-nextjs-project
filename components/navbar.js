@@ -7,7 +7,7 @@ import * as faSolid from "@emotion-icons/fa-solid"
 import { css, jsx } from "@emotion/react"
 import Link from "next/link"
 
-export default function Layout({ children }) {
+export default function Navbar({ children }) {
     return (
         <div>
             <div
