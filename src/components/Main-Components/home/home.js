@@ -25,7 +25,7 @@ const Home = () => (
               }
               `}
         >
-            <div
+            {/* <div
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
@@ -34,7 +34,16 @@ const Home = () => (
                   `}
             >
                 CREATIVITY REALM
+            </div> */}
+            <div>
+                <Image
+                    src="/images/Title.png"
+                    layout="intrinsic"
+                    width={736}
+                    height={305}
+                />
             </div>
+
 
             <div
                 css={css`
