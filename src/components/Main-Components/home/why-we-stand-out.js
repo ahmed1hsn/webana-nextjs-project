@@ -41,11 +41,15 @@ const base = css`
       > div:nth-of-type(-n+2) {
           text-align: center;
       }
-      div:nth-of-type(2) {
+      > div:nth-of-type(2) {
           font-family: 'Green Lantern';
           color: #16f533;
           font-size: 1rem;
           letter-spacing: 0.1rem;
+      }
+      > div:nth-of-type(3) {
+          letter-spacing: 0.1rem;
+          line-height: 1.4rem;
       }
   }
 `

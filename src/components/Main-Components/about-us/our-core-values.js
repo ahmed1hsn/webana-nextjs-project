@@ -41,6 +41,10 @@ const base = css`
           text-align: center;
 
       }
+      & > div:nth-of-type(2) {
+          letter-spacing: 0.1rem;
+          line-height: 1.4rem;
+      }
   }
 `
 

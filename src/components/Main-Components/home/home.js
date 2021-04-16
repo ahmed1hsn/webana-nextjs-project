@@ -47,6 +47,8 @@ const Home = () => (
 
             <div
                 css={css`
+                  letter-spacing: 0.1rem;
+                  line-height: 1.4rem;
                   padding: 1rem 0;
                   `}
             >
