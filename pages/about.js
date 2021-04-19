@@ -2,6 +2,7 @@
 
 import { css, jsx } from "@emotion/react"
 import Head from "next/head"
+import { Zoom } from "react-awesome-reveal"
 import Navbar from "../src/components/Sub-Components/navbar"
 import BusinessGrowthAgency from "../src/components/Main-Components/about-us/business-growth-agency"
 import AboutUs from "../src/components/Main-Components/about-us/about-us"
@@ -18,15 +19,27 @@ const About = () => (
             <link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
         </Head>
         <Navbar background='/images/background2.png'>
-            <BusinessGrowthAgency />
-            <AboutUs />
-            <OurMission />
-            <OurCoreValues />
+            <Zoom>
+                <BusinessGrowthAgency />
+            </Zoom>
+            <Zoom>
+                <AboutUs />
+            </Zoom>
+            <Zoom>
+                <OurMission />
+            </Zoom>
+            <Zoom>
+                <OurCoreValues />
+            </Zoom>
             <div
-            css={css`
-              padding: 1rem;`}></div>
-            <BuildTheBestExperience />
-            <LetsWorkTogether />
+                css={css`
+                  padding: 1rem;`}></div>
+            <Zoom>
+                <BuildTheBestExperience />
+            </Zoom>
+            <Zoom>
+                <LetsWorkTogether />
+            </Zoom>
         </Navbar>
     </>
 )

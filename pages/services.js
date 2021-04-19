@@ -10,6 +10,7 @@ import WebDevelopment from "../src/components/Main-Components/services/web-devel
 import SearchEngineOptimization from "../src/components/Main-Components/services/search-engine-optimization"
 import SocialMediaManagement from "../src/components/Main-Components/services/social-media-management"
 import Consulting from "../src/components/Main-Components/services/consulting"
+import { Zoom } from "react-awesome-reveal"
 
 
 const Services = () => (
@@ -20,13 +21,27 @@ const Services = () => (
             <link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
         </Head>
         <Navbar>
-            <BrandingAndDesign />
-            <ContentProduction />
-            <AppDevelopment />
-            <WebDevelopment />
-            <SearchEngineOptimization />
-            <SocialMediaManagement />
-            <Consulting />
+            <Zoom>
+                <BrandingAndDesign />
+            </Zoom>
+            <Zoom>
+                <ContentProduction />
+            </Zoom>
+            <Zoom>
+                <AppDevelopment />
+            </Zoom>
+            <Zoom>
+                <WebDevelopment />
+            </Zoom>
+            <Zoom>
+                <SearchEngineOptimization />
+            </Zoom>
+            <Zoom>
+                <SocialMediaManagement />
+            </Zoom>
+            <Zoom>
+                <Consulting />
+            </Zoom>
         </Navbar>
     </>
 )
