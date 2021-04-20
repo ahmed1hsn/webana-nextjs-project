@@ -8,7 +8,7 @@ import WhyWeStandOut from "../src/components/Main-Components/home/why-we-stand-o
 import { css, jsx } from "@emotion/react"
 import React from "react";
 import Head from "next/head"
-import { Slide, Zoom } from "react-awesome-reveal"
+import { Zoom } from "react-awesome-reveal"
 // import Layout from "../src/components/Main-Components/Layout";
 // import Link from "next/link"
 
@@ -22,15 +22,15 @@ function Main({ ...props }) {
 				<link rel="shortcut icon" href="/images/webanah-logo.png" type="image/png"></link>
 			</Head>
 			<Navbar background='/images/background1.png'>
-				<Slide direction="right">
+				<Zoom>
 					<Home />
-				</Slide>
-				<Slide direction="right">
+				</Zoom>
+				<Zoom>
 					<WhatWeDo />
-				</Slide>
-				<Slide>
+				</Zoom>
+				<Zoom>
 					<BestSolution />
-				</Slide>
+				</Zoom>
 				<Zoom>
 					<WhyWeStandOut />
 				</Zoom>
