@@ -28,7 +28,7 @@ const gridContainer = css`
   /*border: 1px solid black;*/
   display: grid;
   grid-template-columns: 1fr;
-  ${'' /* margin-top: 9.375rem; */}
+  margin-top: 9.375rem;
   text-align: center;
   
   @media (min-width: 768px) {
@@ -97,6 +97,7 @@ function PortfolioCard(props) {
     return (
         <div
             css={css`
+              height: 100vh;
               /* height: 93.75rem; */
               @media (max-width: 768px) {
                   /* height: 196.875rem; */
