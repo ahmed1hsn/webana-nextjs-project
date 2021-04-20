@@ -20,7 +20,10 @@ const Contact = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: 2rem;
+                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
+                  letter-spacing: 0.5rem;
+                  color: transparent;
+                  -webkit-text-stroke: 0.05rem #16f533;
                   text-align: center;
                   `}
             >
@@ -96,12 +99,12 @@ function Form() {
                     Form Submitted Successfully.</div>) ||
                     (respCode == 409 && <div
                         css={css`
-                      display: inline;
-                      color: white;
-                      font-weight: bold;
-                      border: 0.05rem solid red;
-                      padding: 0.5rem;
-                      border-radius: 1rem;
+                          display: inline;
+                          color: white;
+                          font-weight: bold;
+                          border: 0.05rem solid red;
+                          padding: 0.5rem;
+                          border-radius: 1rem;
                     `}
                     >
                         Email Aready Exists.</div>)
@@ -131,7 +134,7 @@ function Form() {
                       padding-top: 0.5rem;
                   }
                   & > textarea {
-                      padding: 0.75rem;
+                      padding: 0.7rem;
                       resize: none;
                       border-radius: 0.5rem;
                       margin-bottom: 1rem;
@@ -141,7 +144,7 @@ function Form() {
                       }
                   }
                   & > input {
-                      padding: 0.75rem;
+                      padding: 0.7rem;
                       border-radius: 0.5rem;
                       &:focus {
                           border-color: #16f533;
@@ -204,7 +207,8 @@ function Form() {
                       grid-row: 4 / 5;
                   }
                   @media (min-width: 1200px) {
-                    padding-top: 2rem;
+                    /* padding-top: 2rem; */
+                    align-self: center;
                     grid-column: 3 / 4;
                     grid-row: 1 / 4;
                   }
