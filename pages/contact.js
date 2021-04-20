@@ -221,8 +221,8 @@ function Form() {
                           border: 0.05rem solid #16f533;
                       }
                       padding: 0.5rem;
-                      div::nth-of-type(2) {
-                        font-family: 'Green Lanter';
+                      div:nth-of-type(1) {
+                        font-family: 'Green Lantern';
                         color: #16f533;
                       }
                       & > div {
@@ -232,17 +232,17 @@ function Form() {
                     }
                 >
                     <div>
-                        <Phone size="24" />
+                        <Phone size="24" color="#16f533" />
                         <div>Phone</div>
                         <div>0321-1234567</div>
                     </div>
                     <div>
-                        <MapMarkerAlt size="24" />
+                        <MapMarkerAlt size="24" color="#16f533" />
                         <div>Location</div>
                         <div>magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque</div>
                     </div>
                     <div>
-                        <Envelope size="24" />
+                        <Envelope size="24" color="#16f533" />
                         <div>Email</div>
                         <div>webanah@gmail.com</div>
                     </div>
