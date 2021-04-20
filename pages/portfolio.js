@@ -1,16 +1,12 @@
 /** @jsx jsx */
 
-import Navbar from "../src/components/Sub-Components/navbar"
 import { css, jsx } from "@emotion/react"
+import Navbar from "../src/components/Sub-Components/navbar"
+import PortfolioCard from "../src/components/Main-Components/portfolio/portfolio-card"
 
 const Portfolio = () => (
-    <Navbar>
-        <h1
-            css={css`
-              color: white;
-              `}
-        >
-            Portfolio</h1>
+    <Navbar background='/images/background2.png'>
+        <PortfolioCard />
     </Navbar>
 )
 
