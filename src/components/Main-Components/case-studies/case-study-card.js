@@ -4,9 +4,10 @@ import { css, jsx } from '@emotion/react'
 import Image from "next/image"
 
 const gridContainer = css`
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 9.375rem;
+  margin-top: 2.375rem;
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;

@@ -10,7 +10,7 @@ const gridContainer = css`
   /*border: 1px solid black;*/
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 12.5rem;
+  margin-top: 2.5rem;
   margin-left: 18%;
   margin-right: 18%;
   

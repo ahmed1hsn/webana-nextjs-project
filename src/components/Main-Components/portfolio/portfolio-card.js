@@ -28,7 +28,7 @@ const gridContainer = css`
   /*border: 1px solid black;*/
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 9.375rem;
+  margin-top: 2.375rem;
   text-align: center;
   
   @media (min-width: 768px) {
