@@ -13,7 +13,7 @@ const SocialMediaManagement = () => (
           padding: 0.5rem;
           @media (min-width: 1200px) {
               grid-template-columns: 1fr 1fr;
-              margin-bottom: 10rem;
+              /* margin-bottom: 10rem; */
           }
           `}
     >
@@ -49,7 +49,8 @@ const SocialMediaManagement = () => (
         </div>
         <div
             css={css`
-              /* padding: 20%; */
+              padding: 0 20%;
+              align-self: center;
               justify-self: center;
             `}
         >

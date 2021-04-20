@@ -1,6 +1,7 @@
 /** @jsx jsx */
 
 import { css, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import Head from "next/head"
 import Navbar from "../src/components/Sub-Components/navbar"
 import BrandingAndDesign from "../src/components/Main-Components/services/branding-and-design"
@@ -11,6 +12,9 @@ import SearchEngineOptimization from "../src/components/Main-Components/services
 import SocialMediaManagement from "../src/components/Main-Components/services/social-media-management"
 import Consulting from "../src/components/Main-Components/services/consulting"
 
+const Space = styled.div`
+  padding: 5% 0;
+`
 
 const Services = () => (
     <>
@@ -21,12 +25,19 @@ const Services = () => (
         </Head>
         <Navbar>
             <BrandingAndDesign />
+            <Space />
             <ContentProduction />
+            <Space />
             <AppDevelopment />
+            <Space />
             <WebDevelopment />
+            <Space />
             <SearchEngineOptimization />
+            <Space />
             <SocialMediaManagement />
+            <Space />
             <Consulting />
+            <Space />
         </Navbar>
     </>
 )

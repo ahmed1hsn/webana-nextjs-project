@@ -48,7 +48,8 @@ const SearchEngineOptimization = () => (
         </div>
         <div
             css={css`
-              padding: 20%;
+              padding: 0 20%;
+              align-self: center;
               justify-self: center;
               `}
         >
