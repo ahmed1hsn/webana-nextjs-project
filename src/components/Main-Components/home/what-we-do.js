@@ -53,6 +53,8 @@ const WhatWeDo = () => (
         </div>
         <div
             css={css`
+              padding: 0 10%;
+              align-self: center;
               justify-self: center;
               `}
         >

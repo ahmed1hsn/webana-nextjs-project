@@ -64,7 +64,8 @@ const Home = () => (
         </div>
         <div
             css={css`
-              padding: 1rem;
+              padding: 0 10%;
+              align-self: center;
               justify-self: center;
               `}
         >

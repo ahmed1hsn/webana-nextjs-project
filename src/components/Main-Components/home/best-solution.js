@@ -44,7 +44,8 @@ const BestSolution = () => (
         </div>
         <div
             css={css`
-              padding: 6rem;
+              padding: 0 20%;
+              align-self: center;
               justify-self: center;
               @media (min-width: 1200px) {
                   grid-row-start: -1;

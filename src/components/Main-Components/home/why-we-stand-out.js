@@ -7,6 +7,7 @@ import styled from "@emotion/styled"
 const base = css`
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
   grid-gap: 1rem;
   padding: 0.5rem;
   
@@ -27,7 +28,7 @@ const base = css`
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 2rem 0;
+      ${'' /* padding: 2rem 0; */}
       border-left: 0.1rem solid grey;
       border-right: 0.1rem solid grey;
       &:hover {

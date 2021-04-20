@@ -1,16 +1,20 @@
 /** @jsx jsx */
 
+import { css, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import Navbar from "../src/components/Sub-Components/navbar"
 import Home from "../src/components/Main-Components/home/home"
 import WhatWeDo from "../src/components/Main-Components/home/what-we-do"
 import BestSolution from "../src/components/Main-Components/home/best-solution"
 import WhyWeStandOut from "../src/components/Main-Components/home/why-we-stand-out"
-import { css, jsx } from "@emotion/react"
 import React from "react";
 import Head from "next/head"
 // import Layout from "../src/components/Main-Components/Layout";
 // import Link from "next/link"
 
+const Space = styled.div`
+  padding: 5% 0;
+`
 function Main({ ...props }) {
 	return (
 		<>
@@ -22,9 +26,13 @@ function Main({ ...props }) {
 			</Head>
 			<Navbar background='/images/background1.png'>
 				<Home />
+				<Space />
 				<WhatWeDo />
+				<Space />
 				<BestSolution />
+				<Space />
 				<WhyWeStandOut />
+				<Space />
 			</Navbar>
 		</>
 	);
