@@ -67,6 +67,17 @@ const Home = () => (
               padding: 0 10%;
               align-self: center;
               justify-self: center;
+              @keyframes move {
+                  0% {
+                      transform: translate(100%);
+                      opacity: 0;
+                  }
+                  100% {
+                      transform: translate(0%);
+                      opacity: 1;
+                  }
+              }
+              animation: move 0.5s linear;
               `}
         >
             <Image
