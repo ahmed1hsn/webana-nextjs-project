@@ -2,15 +2,11 @@
 
 import Navbar from "../src/components/Sub-Components/navbar"
 import { css, jsx } from "@emotion/react"
+import CaseStudyCard from "../src/components/Main-Components/case-studies/case-study-card"
 
 const CaseStudy = () => (
-    <Navbar>
-        <h1
-            css={css`
-              color: white;
-              `}
-        >
-            Case Studies</h1>
+    <Navbar background='/images/background2.png'>
+        <CaseStudyCard />
     </Navbar>
 )
 
