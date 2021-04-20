@@ -80,11 +80,14 @@ function CaseStudyCard(props) {
         }
         `}>
             <div css={css`
-              text-align: center;
-              font-family: 'Green Lantern';
-              color: #16f533;
-              font-size: 2rem;
-              padding: 0.5rem;
+                  text-align: center;
+                  font-family: 'Green Lantern';
+                  color: #16f533;
+                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
+                  letter-spacing: 0.5rem;
+                  color: transparent;
+                  -webkit-text-stroke: 0.05rem #16f533;
+                  padding: 0.5rem;
               `}>
                 OUR CASE STUDIES
       </div>
