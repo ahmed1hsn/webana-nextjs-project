@@ -53,16 +53,30 @@ const SocialMediaManagement = () => (
               padding: 0 1rem;
               align-self: center;
               justify-self: center;
-              background: center/contain no-repeat url('/images/social-media-management-bg.png');
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              /* background: center/contain no-repeat url('/images/social-media-management-bg.png'); */
             `}
         >
             <div
                 css={css`
-                  padding: 0 20%;
-                  padding-bottom: 60%;
+                  margin-bottom: -25%;
                   `}>
                 <Image
                     src="/images/social-media-management-icon.png"
+                    layout="intrinsic"
+                    width={196}
+                    height={156}
+                />
+            </div>
+            <div
+                css={css`
+                  /* padding: 0 20%; */
+                  /* padding-bottom: 60%; */
+                  `}>
+                <Image
+                    src="/images/social-media-management-bg.png"
                     layout="intrinsic"
                     width={782}
                     height={613}
