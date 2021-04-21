@@ -36,7 +36,7 @@ const base = css`
 
 export const StyledBurger = styled.button`
   position: absolute;
-  top: 1rem;
+  top: 1.125rem;
   left: 1rem;
   display: flex;
   flex-direction: column;

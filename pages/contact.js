@@ -20,7 +20,7 @@ const Contact = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: #16f533;
-                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
+                  font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3.75rem);
                   letter-spacing: 0.5rem;
                   color: transparent;
                   -webkit-text-stroke: 0.05rem #16f533;
@@ -131,6 +131,7 @@ function Form() {
                       font-family: 'Green Lantern';
                       font-style: oblique 40deg;
                       color: #16f533;
+                      letter-spacing: 0.1rem;
                       padding-top: 0.5rem;
                   }
                   & > textarea {
@@ -224,6 +225,10 @@ function Form() {
                       div:nth-of-type(1) {
                         font-family: 'Green Lantern';
                         color: #16f533;
+                        letter-spacing: 0.25rem;
+                      }
+                      div:nth-of-type(2) {
+                          letter-spacing: 0.1rem;
                       }
                       & > div {
                           padding: 0.5rem;
@@ -265,7 +270,7 @@ const ContactData = () => (
               border: 0.05rem solid grey;
               border-radius: 1rem;
               div:nth-of-type(2) {
-                  font-family: 'Green Lanter';
+                  font-family: 'Green Lantern';
                   color: #16f533;
               }
               & > div {
