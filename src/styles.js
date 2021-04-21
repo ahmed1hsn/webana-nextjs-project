@@ -19,6 +19,19 @@ export const globalStyles = (
         font-family: 'Raleway', Helvetica, Arial, sans-serif;
         font-size: 16px;
       }
+      body::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+      body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: slategrey;
+      }
+      body::-webkit-scrollbar-thumb {
+        border-radius: 2rem;
+        background-color: #16f533;
+        outline: 1px solid slategrey;
+      }
       a {
         text-decoration: none;
         color: white;
