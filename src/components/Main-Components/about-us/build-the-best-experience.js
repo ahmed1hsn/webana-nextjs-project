@@ -28,10 +28,10 @@ const BuildTheBestExperience = () => (
                 css={css`
                   font-family: 'Green Lantern';
                   color: transparent;
-                  font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
-                  -webkit-text-stroke: 0.05rem #16f533;
+                  font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3.75rem);
+                  -webkit-text-stroke: 0.06rem #16f533;
 
-                  letter-spacing: 0.1rem;
+                  letter-spacing: 0.25rem;
                   `}
             >
                 BUILD THE BEST EXPERIENCE

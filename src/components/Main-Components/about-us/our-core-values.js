@@ -57,11 +57,11 @@ const OurCoreValues = () => (
         <div
             css={css`
               font-family: 'Green Lantern';
-              font-size: clamp(1rem, -0.875rem + 8.333vw, 3.75rem);
+              font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3.75rem);
               text-align: center;
               color: transparent;
-              -webkit-text-stroke: 0.05rem #16f533;
-              letter-spacing: 0.1rem;
+              -webkit-text-stroke: 0.06rem #16f533;
+              letter-spacing: 0.25rem;
               `}
         >
             Our Core Values

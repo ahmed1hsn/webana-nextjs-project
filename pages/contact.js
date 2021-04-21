@@ -23,7 +23,7 @@ const Contact = () => (
                   font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3.75rem);
                   letter-spacing: 0.5rem;
                   color: transparent;
-                  -webkit-text-stroke: 0.05rem #16f533;
+                  -webkit-text-stroke: 0.06rem #16f533;
                   text-align: center;
                   `}
             >
