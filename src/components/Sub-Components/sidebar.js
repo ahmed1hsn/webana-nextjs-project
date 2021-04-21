@@ -10,79 +10,21 @@ import Link from "next/link"
 import Image from "next/image"
 import useOnClickOutside from "../../utils/use-onclickoutside"
 
-// TODO Sidebar
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* border: 0.1rem solid green; */
-  max-width: max-content;
-  padding: 0.5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 90vh;
-  background: #302d3d;
-`
-export const Item = styled.div`
-  color: white;
-  &:hover {
-    filter: drop-shadow(0 0 0.4rem white);
-  }
-`
-
 export const Sidebar = (props) => {
 
   // Create a ref that we add to the element for which we want to detect outside clicks
-  const ref = useRef();
+  const node = useRef();
   // State for our sidebar
   const [open, setOpen] = useState(false);
   // Call hook passing in the ref and a function to call on outside click
-  useOnClickOutside(ref, () => setOpen(false))
+  useOnClickOutside(node, () => setOpen(false))
 
-  if (!open) {
-    return (<faSolid.Bars onClick={() => setOpen(true)}
-      css={css`
-        position: absolute;
-        padding: 1.125rem;
-        top: 0px;
-        ${base}
-        `} size="24" />)
-  } else {
-    return (
-      <Container onClick={() => console.log('Container')} ref={ref}>
-        <Item onClick={() => setOpen(false)}><faSolid.Times css={base} size="24" /></Item>
-        <Item>
-          <Image
-            src="/images/webanah-logo.png"
-            width={63}
-            height={65}
-            layout="fixed"
-          />
-        </Item>
-        <Item><Link href="/"><a>Home</a></Link></Item>
-        <Item><Link href="/about"><a>About Us</a></Link></Item>
-        <Item><Link href="/services"><a>Services</a></Link></Item>
-        <Item><Link href="/portfolio"><a>Portfolio</a></Link></Item>
-        <Item><Link href="/case-studies"><a>Case Studies</a></Link></Item>
-        <Item><Link href="/blogs"><a>Blogs</a></Link></Item>
-        <Item><Link href="/contact"><a>Contact Us</a></Link></Item>
-        <div
-          css={css`
-            display: flex;
-            justify-content: space-around;
-            width: 6rem;
-            `}
-        >
-          <faBrands.FacebookF css={base} size="16" />
-          <faBrands.Twitter css={base} size="16" />
-          <faBrands.LinkedinIn css={base} size="16" />
-          <faBrands.Instagram css={base} size="16" />
-        </div>
-      </Container>
-    )
-  }
+  return (
+    <div ref={node}>
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} setOpen={setOpen} />
+    </div>
+  )
 }
 
 const base = css`
@@ -91,3 +33,129 @@ const base = css`
     filter: drop-shadow(0 0 0.4rem white);
   }
   `
+
+export const StyledBurger = styled.button`
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${({ open }) => open ? 'white' : 'white'};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+
+    :first-of-type {
+      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+
+    :nth-of-type(2) {
+      opacity: ${({ open }) => open ? '0' : '1'};
+      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+    }
+
+    :nth-of-type(3) {
+      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+    }
+  }
+`;
+
+const Burger = ({ open, setOpen }) => {
+  return (
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <div />
+      <div />
+      <div />
+    </StyledBurger>
+  )
+}
+
+export const StyledMenu = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #000d23;
+  height: 90vh;
+  @media (max-width: 768px) {
+    height: 80vh;
+  }
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+
+
+  div {
+    padding: 1rem 0;
+  }
+  a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: #16f533;
+    }
+  }
+`;
+
+const Menu = ({ open }) => {
+  return (
+    <StyledMenu open={open}>
+      <div>
+        <Image
+          src="/images/webanah-logo.png"
+          width={63}
+          height={65}
+          layout="fixed"
+        />
+      </div>
+      <div><Link href="/"><a>Home</a></Link></div>
+      <div><Link href="/about"><a>About Us</a></Link></div>
+      <div><Link href="/services"><a>Services</a></Link></div>
+      <div><Link href="/portfolio"><a>Portfolio</a></Link></div>
+      <div><Link href="/case-studies"><a>Case Studies</a></Link></div>
+      <div><Link href="/blogs"><a>Blogs</a></Link></div>
+      <div><Link href="/contact"><a>Contact Us</a></Link></div>
+      <div
+        css={css`
+          display: flex;
+          justify-content: space-around;
+          justify-self: end;
+          width: 100%;
+            `}
+      >
+        <faBrands.FacebookF css={base} size="16" />
+        <faBrands.Twitter css={base} size="16" />
+        <faBrands.LinkedinIn css={base} size="16" />
+        <faBrands.Instagram css={base} size="16" />
+      </div>
+    </StyledMenu>
+  )
+}
