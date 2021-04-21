@@ -49,17 +49,25 @@ const SocialMediaManagement = () => (
         </div>
         <div
             css={css`
-              padding: 0 20%;
+              /* padding: 0 20%; */
+              padding: 0 1rem;
               align-self: center;
               justify-self: center;
+              background: center/contain no-repeat url('/images/social-media-management-bg.png');
             `}
         >
-            <Image
-                src="/images/social-media-management-bg.png"
-                layout="intrinsic"
-                width={782}
-                height={613}
-            />
+            <div
+                css={css`
+                  padding: 0 20%;
+                  padding-bottom: 60%;
+                  `}>
+                <Image
+                    src="/images/social-media-management-icon.png"
+                    layout="intrinsic"
+                    width={782}
+                    height={613}
+                />
+            </div>
         </div>
     </div>
 )

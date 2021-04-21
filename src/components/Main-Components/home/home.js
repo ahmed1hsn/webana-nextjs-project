@@ -49,7 +49,7 @@ const Home = () => (
                 css={css`
                   letter-spacing: 0.1rem;
                   line-height: 1.4rem;
-                  padding: 1rem 0;
+                  padding: 1rem 0 3rem;
                   `}
             >
                 Webanah is your ultimate fantasy that has come alive. Your dream of having an established and attractive website design for your business with commendable online performance and abundant revenue is Webanah’s food for soul. Webanah use your dream to energize its webanarians who make your brand rule the online universe with engaging design, unparallel digital marketing strategies and position it to the throne of search engines' highest rank.

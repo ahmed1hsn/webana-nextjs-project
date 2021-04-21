@@ -38,7 +38,7 @@ const WhatWeDo = () => (
                 css={css`
                   letter-spacing: 0.1rem;
                   line-height: 1.4rem;
-                  padding: 1rem 0;
+                  padding: 1rem 0 3rem;
                   `}
             >
                 Webanah is a digital superhero at your rescue for all the digital needs of your brand. With a professional and highly experienced team on board, Webanah provides you with ultimate marketing strategies for your website. Webanah takes your brand to the new heights of success by increasing the audience towards the website through specific promotional strategies like successful SEO, attractive branding, impeccable UI/UX designing, engaging content creation, responsive app development, and ideas-driven consultancy. Our team works untiringly until your website reaches desired results.
