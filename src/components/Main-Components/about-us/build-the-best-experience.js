@@ -50,7 +50,8 @@ const BuildTheBestExperience = () => (
 
         <div
             css={css`
-              padding: 1rem;
+              padding: 0 20%;
+              align-self: center;
               justify-self: center;
               `}
         >

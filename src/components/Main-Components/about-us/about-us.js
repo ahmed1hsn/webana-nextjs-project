@@ -55,10 +55,11 @@ const AboutUs = () => (
         </div>
         <div
             css={css`
-              padding: 1rem;
+              padding: 0 10%;
+              align-self: center;
               justify-self: center;
               @media (min-width: 1200px) {
-                  margin-top: 20rem;
+                  /* margin-top: 20rem; */
               }`}>
             <Image
                 src="/images/webanah-character1.png"

@@ -55,7 +55,8 @@ const OurMission = () => (
         </div>
         <div
             css={css`
-              padding: 1rem;
+              padding: 0 10%;
+              align-self: center;
               justify-self: center;
               @media (min-width: 1200px) {
                   grid-row-start: -1;

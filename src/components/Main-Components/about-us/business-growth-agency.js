@@ -54,7 +54,8 @@ const BusinessGrowthAgency = () => (
         </div>
         <div
             css={css`
-              padding: 5rem;
+              padding: 0 15%;
+              align-self: center;
               justify-self: center;
               `}
         >

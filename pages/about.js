@@ -1,6 +1,7 @@
 /** @jsx jsx */
 
 import { css, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
 import Head from "next/head"
 import Navbar from "../src/components/Sub-Components/navbar"
 import BusinessGrowthAgency from "../src/components/Main-Components/about-us/business-growth-agency"
@@ -10,6 +11,9 @@ import OurCoreValues from "../src/components/Main-Components/about-us/our-core-v
 import BuildTheBestExperience from "../src/components/Main-Components/about-us/build-the-best-experience"
 import LetsWorkTogether from "../src/components/Main-Components/about-us/lets-work-together"
 
+const Space = styled.div`
+  padding: 5% 0;
+`
 const About = () => (
     <>
         <Head>
@@ -19,14 +23,17 @@ const About = () => (
         </Head>
         <Navbar background='/images/background2.png'>
             <BusinessGrowthAgency />
+            <Space />
             <AboutUs />
+            <Space />
             <OurMission />
+            <Space />
             <OurCoreValues />
-            <div
-            css={css`
-              padding: 1rem;`}></div>
+            <Space />
             <BuildTheBestExperience />
+            <Space />
             <LetsWorkTogether />
+            <Space />
         </Navbar>
     </>
 )
