@@ -49,26 +49,96 @@ const SocialMediaManagement = () => (
         </div>
         <div
             css={css`
-              /* padding: 0 20%; */
-              padding: 0 1rem;
-              align-self: center;
               justify-self: center;
+              align-self: center;
+
               display: flex;
-              align-items: center;
               flex-direction: column;
-              /* background: center/contain no-repeat url('/images/social-media-management-bg.png'); */
-            `}
-        >
+              align-items: center;
+
+              `}>
             <div
                 css={css`
-                  margin-bottom: -25%;
+                  padding: 0 15%;
+                  /* padding: 0 1rem; */
+                  justify-self: center;
+                  display: flex;
+                  /* flex-direction: column; */
+                  align-items: center;
+                  justify-items: center;
+                  margin-bottom: -30%;
+                  /* background: center/contain no-repeat url('/images/social-media-management-bg.png'); */
+            `}
+            >
+                <div
+                    css={css`
+                      margin-bottom: -25%;
+                      /* align-self: flex-end; */
                   `}>
-                <Image
-                    src="/images/social-media-management-icon.png"
-                    layout="intrinsic"
-                    width={196}
-                    height={156}
-                />
+                    <Image
+                        src="/images/Skype.png"
+                        layout="intrinsic"
+                        width={192}
+                        height={192}
+                    />
+                </div>
+                <div
+                    css={css`
+                      /* align-self: flex-start; */
+                      margin-bottom: 25%;
+                      margin-left: -10%;
+                      `}>
+                    <Image
+                        src="/images/Youtube.png"
+                        layout="intrinsic"
+                        width={185}
+                        height={185}
+                    />
+                </div>
+                <div
+                    css={css`
+                      margin-bottom: 35%;
+                `}>
+                    <Image
+                        src="/images/Facebook.png"
+                        layout="intrinsic"
+                        width={86}
+                        height={86}
+                    />
+                </div>
+                <div
+                    css={css`
+                      margin-left: -10%;
+                      `}>
+                    <Image
+                        src="/images/Snapchat.png"
+                        layout="intrinsic"
+                        width={181}
+                        height={181}
+                    />
+                </div>
+                <div
+                    css={css`
+                      margin-bottom: 20%;
+                      `}>
+                    <Image
+                        src="/images/Whatsapp.png"
+                        layout="intrinsic"
+                        width={197}
+                        height={197}
+                    />
+                </div>
+                <div
+                    css={css`
+                      margin-bottom: -25%;
+                      `}>
+                    <Image
+                        src="/images/Twitter.png"
+                        layout="intrinsic"
+                        width={186}
+                        height={186}
+                    />
+                </div>
             </div>
             <div
                 css={css`
@@ -83,6 +153,7 @@ const SocialMediaManagement = () => (
                 />
             </div>
         </div>
+
     </div>
 )
 
