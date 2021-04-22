@@ -50,6 +50,39 @@ const BestSolution = () => (
               @media (min-width: 1200px) {
                   grid-row-start: -1;
               }
+              
+              animation: move_bs 0.5s linear, move_bs2 1s linear infinite;
+              animation-delay: 0s, 1s;
+              animation-direction: normal, alternate;
+              @keyframes move_bs {
+                0% {
+                    transform: translate(-100%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translate(0%);
+                    opacity: 1;
+                }
+              }
+              @keyframes move_bs2 {
+                  0% {
+                      transform: translate(0px, 0%);
+                  }
+                  100% {
+                      transform: translate(0px, -3%);
+                  }
+              }
+              /*  @keyframes move3 {
+                  0% {
+                      transform: translate(-100%);
+                      opacity: 0;
+                  }
+                  100% {
+                      transform: translate(0%);
+                      opacity: 1;
+                  }
+              }
+              animation: move3 0.5s linear;*/
               `}
         >
             <Image

@@ -56,7 +56,29 @@ const WhatWeDo = () => (
               padding: 0 10%;
               align-self: center;
               justify-self: center;
-              `}
+
+              animation: move_wwd 0.7s linear, move_wwd2 1s linear infinite;
+              animation-delay: 0s, 1s;
+              animation-direction: normal, alternate;
+              @keyframes move_wwd {
+                0% {
+                    transform: translate(0px, -50%);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translate(0px, 0%);
+                    opacity: 1;
+                }
+              }
+              @keyframes move_wwd2 {
+                  0% {
+                      transform: translate(0px, 0%);
+                  }
+                  100% {
+                      transform: translate(0px, -3%);
+                  }
+              }
+            `}
         >
             <Image
                 src="/images/webanah-character2.png"
