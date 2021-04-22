@@ -52,6 +52,17 @@ const AppDevelopment = () => (
               padding: 0 20%;
               align-self: center;
               justify-self: center;
+
+              animation: move_ad 1s linear infinite;
+              animation-direction: alternate;
+              @keyframes move_ad {
+                0% {
+                    transform: translate(0px, 0%);
+                }
+                100% {
+                    transform: translate(0px, -3%);
+                }
+            }
               `}
         >
             <Image

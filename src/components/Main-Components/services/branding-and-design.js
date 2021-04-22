@@ -50,6 +50,17 @@ const BrandingAndDesign = () => (
               padding: 0 20%;
               align-self: center;
               justify-self: center;
+
+              animation: move_bd 1s linear infinite;
+              animation-direction: alternate;
+              @keyframes move_bd {
+                0% {
+                    transform: translate(0px, 0%);
+                }
+                100% {
+                    transform: translate(0px, -3%);
+                }
+            }
               `}
         >
             <Image

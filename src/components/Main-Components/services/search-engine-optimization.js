@@ -40,6 +40,19 @@ const SearchEngineOptimization = () => (
                   letter-spacing: 0.1rem;
                   line-height: 1.4rem;
                   padding: 1rem 0;
+
+                  animation: move_seo 2s linear;
+                  animation-delay: 0.5s;
+                  @keyframes move_seo {
+                    0% {
+                        transform: translate(0, 400%);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translate(0, 0%);
+                        opacity: 1;
+                    }
+                }
                   `}
             >
                 While the best SEO strategies are research-driven, SEO is still a long way from an accurate science. In any case, there are sure some specific strategies you can hope to get from any advanced organization. Because of the differing levels of performance, and ranges of abilities in the business, outcomes, and ROI will fluctuate from one organization to another. In addition, an effective SEO organization should truly comprehend your business and examine your industry to accumulate working information on your topic.

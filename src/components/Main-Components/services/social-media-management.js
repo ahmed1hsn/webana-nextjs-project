@@ -74,6 +74,17 @@ const SocialMediaManagement = () => (
                     css={css`
                       margin-bottom: -25%;
                       /* align-self: flex-end; */
+
+                      animation: move_s 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_s {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, -8%);
+                          }
+                      }
                   `}>
                     <Image
                         src="/images/Skype.png"
@@ -87,6 +98,17 @@ const SocialMediaManagement = () => (
                       /* align-self: flex-start; */
                       margin-bottom: 25%;
                       margin-left: -10%;
+
+                      animation: move_yt 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_yt {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, -8%);
+                          }
+                      }
                       `}>
                     <Image
                         src="/images/Youtube.png"
@@ -98,6 +120,17 @@ const SocialMediaManagement = () => (
                 <div
                     css={css`
                       margin-bottom: 35%;
+
+                      animation: move_fb 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_fb {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, 8%);
+                          }
+                      }
                 `}>
                     <Image
                         src="/images/Facebook.png"
@@ -109,6 +142,17 @@ const SocialMediaManagement = () => (
                 <div
                     css={css`
                       margin-left: -10%;
+
+                      animation: move_sc 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_sc {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, 8%);
+                          }
+                      }
                       `}>
                     <Image
                         src="/images/Snapchat.png"
@@ -120,6 +164,17 @@ const SocialMediaManagement = () => (
                 <div
                     css={css`
                       margin-bottom: 20%;
+
+                      animation: move_wa 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_wa {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, -8%);
+                          }
+                      }
                       `}>
                     <Image
                         src="/images/Whatsapp.png"
@@ -131,6 +186,17 @@ const SocialMediaManagement = () => (
                 <div
                     css={css`
                       margin-bottom: -25%;
+
+                      animation: move_t 1s linear infinite;
+                      animation-direction: alternate;
+                      @keyframes move_t {
+                          0% {
+                              transform: translate(0px, 0%);
+                          }
+                          100% {
+                              transform: translate(0px, -8%);
+                          }
+                      }
                       `}>
                     <Image
                         src="/images/Twitter.png"

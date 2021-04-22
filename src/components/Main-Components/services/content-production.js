@@ -50,6 +50,17 @@ const ContentProduction = () => (
               padding: 0 20%;
               align-self: center;
               justify-self: center;
+
+              animation: move_cp 1s linear infinite;
+              animation-direction: alternate;
+              @keyframes move_cp {
+                0% {
+                    transform: translate(0%);
+                }
+                100% {
+                    transform: translate(-3%);
+                }
+            }
             `}
         >
             <Image
