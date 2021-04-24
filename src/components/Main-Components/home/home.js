@@ -1,12 +1,35 @@
 /** @jsx jsx */
-
+import {useState} from 'react';
 import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
 import { Button } from "../../Sub-Components/button"
 import Link from "next/link";
+import ScrollTrigger from 'react-scroll-trigger';
 
-const Home = () => (
+const ImgDiv = styled.div`  padding: 0 10%;
+                            align-self: center;
+                            justify-self: center;
+                            animation: ${props => props.visible === true ? 
+                                'move 0.5s linear' : 'none'};
+                            @keyframes move {
+                                0% {
+                                    transform: translate(100%);
+                                    opacity: 0;
+                                }
+                                100% {
+                                    transform: translate(0%);
+                                    opacity: 1;
+                                }
+                            }
+                            animation-delay: 0.5s;
+                            /*animation: move 0.5s linear;*/`
+
+function Home() {
+
+    const [componentVisible, setComponentVisible] = useState(false);
+
+    return(
     <div
         css={css`
           display: grid;
@@ -62,34 +85,24 @@ const Home = () => (
             </div>
             <Link href="/contact"><Button>Contact Us</Button></Link>
         </div>
-        <div
-            css={css`
-              padding: 0 10%;
-              align-self: center;
-              justify-self: center;
-              @keyframes move {
-                  0% {
-                      transform: translate(100%);
-                      opacity: 0;
-                  }
-                  100% {
-                      transform: translate(0%);
-                      opacity: 1;
-                  }
-              }
-              animation: move 0.5s linear;
-              `}
+
+        <ScrollTrigger 
+            onEnter={()=> setComponentVisible(true)}  
+            onExit={() => setComponentVisible(false)}
         >
-            <Image
-                css={css``}
-                src="/images/webanah-character3.png"
-                layout="intrinsic"
-                width={930}
-                height={872}
-            />
-        </div>
+            <ImgDiv visible={componentVisible}>
+                <Image
+                    css={css``}
+                    src="/images/webanah-character3.png"
+                    layout="intrinsic"
+                    width={930}
+                    height={872}
+                />
+            </ImgDiv>
+        </ScrollTrigger>
 
     </div>
-)
+);
+}
 
 export default Home

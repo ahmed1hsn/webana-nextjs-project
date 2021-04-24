@@ -4,8 +4,40 @@ import { css, jsx } from "@emotion/react";
 import Image from "next/image"
 import styled from "@emotion/styled"
 import { Button } from "../../Sub-Components/button"
+import ScrollTrigger from 'react-scroll-trigger';
+import {useState} from 'react';
+   
 
-const BestSolution = () => (
+const ImgDiv = styled.div`  animation: ${props => props.visible === true ? 
+                            'move_bs 0.5s linear, move_bs2 1s linear infinite' :
+                             'none'};
+                           /* animation: move_bs 0.5s linear, move_bs2 1s linear infinite;*/
+                            animation-delay: 0s, 1s;
+                            animation-direction: normal, alternate;
+                            @keyframes move_bs {
+                            0% {
+                                transform: translate(-100%);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translate(0%);
+                                opacity: 1;
+                            }
+                            }
+                            @keyframes move_bs2 {
+                                0% {
+                                    transform: translate(0px, 0%);
+                                }
+                                100% {
+                                    transform: translate(0px, -3%);
+                                }
+                            }
+                            ` 
+
+const BestSolution = () => {
+
+    const [componentVisible, setComponentVisible] = useState(false);
+    return(
     <div
         css={css`
           display: grid;
@@ -50,49 +82,22 @@ const BestSolution = () => (
               @media (min-width: 1200px) {
                   grid-row-start: -1;
               }
-              
-              animation: move_bs 0.5s linear, move_bs2 1s linear infinite;
-              animation-delay: 0s, 1s;
-              animation-direction: normal, alternate;
-              @keyframes move_bs {
-                0% {
-                    transform: translate(-100%);
-                    opacity: 0;
-                }
-                100% {
-                    transform: translate(0%);
-                    opacity: 1;
-                }
-              }
-              @keyframes move_bs2 {
-                  0% {
-                      transform: translate(0px, 0%);
-                  }
-                  100% {
-                      transform: translate(0px, -3%);
-                  }
-              }
-              /*  @keyframes move3 {
-                  0% {
-                      transform: translate(-100%);
-                      opacity: 0;
-                  }
-                  100% {
-                      transform: translate(0%);
-                      opacity: 1;
-                  }
-              }
-              animation: move3 0.5s linear;*/
               `}
         >
-            <Image
-                src="/images/fantasized-ideas-turn-into-reality.png"
-                layout="intrinsic"
-                width={554}
-                height={634}
-            />
+            <ScrollTrigger onEnter={()=> setComponentVisible(true)}  onExit={() => setComponentVisible(false)}>
+                <ImgDiv visible={componentVisible}> 
+                {console.log(componentVisible)}
+                    <Image
+                        src="/images/fantasized-ideas-turn-into-reality.png"
+                        layout="intrinsic"
+                        width={554}
+                        height={634}
+                    />
+                </ImgDiv>
+            </ScrollTrigger>
         </div>
     </div>
-)
+);
+}
 
 export default BestSolution

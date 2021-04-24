@@ -1,11 +1,12 @@
 /** @jsx jsx */
 import React, { useState, useEffect } from 'react';
-import { Search } from "@emotion-icons/fa-solid"
+import { Scroll, Search } from "@emotion-icons/fa-solid"
 import { css, jsx } from "@emotion/react"
 import styled from '@emotion/styled'
 import Image from "next/image"
 import { Button } from "../../Sub-Components/button"
 import VisibilitySensor from 'react-visibility-sensor'
+import ScrollTrigger from 'react-scroll-trigger';
 
 const ImgDiv = styled.div`padding: 0 20%;
                         align-self: center;
@@ -23,7 +24,7 @@ const ImgDiv = styled.div`padding: 0 20%;
                             }
                         `
 
-
+                 
 function SearchEngineOptimization() {
 
     const [componentVisible, setComponentVisible] = useState(false);
@@ -71,13 +72,9 @@ return(
                 Webanah has marketing professionals that perform detailed research and craft such promotional strategies that will take your business up a notch, based on the results of the research. SEO audit, competitor analysis, Link building, on-page SEO, off page SEO, technical SEO, keyword research everything your website needs, Webanah has the potential to deal with it efficiently and provides monthly report to the clients to keep them updated about the progress.
             </div>
         </div>
-        <VisibilitySensor 
-            onChange={(isVisible) => {
-            console.log(isVisible);
-            setComponentVisible(true);
-            console.log('state: '+ componentVisible);
-        }}>
-            <ImgDiv visible={''}>  
+        <ScrollTrigger onEnter={()=> setComponentVisible(true)}  onExit={() => setComponentVisible(false)}>
+            {console.log(componentVisible)}
+            <ImgDiv visible={componentVisible}>  
                 <Image
                     src="/images/SEO.png"
                     layout="intrinsic"
@@ -85,7 +82,7 @@ return(
                     height={738}
                 />
            </ImgDiv>
-        </VisibilitySensor>
+        </ScrollTrigger>
     </div>
 );
 }

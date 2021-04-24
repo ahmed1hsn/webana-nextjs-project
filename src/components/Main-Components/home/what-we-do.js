@@ -5,8 +5,41 @@ import Image from "next/image"
 import styled from "@emotion/styled"
 import Link from "next/link"
 import { Button } from "../../Sub-Components/button"
+import ScrollTrigger from 'react-scroll-trigger';
+import {useState} from 'react';
 
-const WhatWeDo = () => (
+const ImgDiv = styled.div`padding: 0 10%;
+                            align-self: center;
+                            justify-self: center;
+                            animation:  ${props => props.visible === true ? 
+                                        'move_wwd 0.7s linear, move_wwd2 1s linear infinite' 
+                                        : 'none'};
+                            /*animation: move_wwd 0.7s linear, move_wwd2 1s linear infinite;*/
+                            animation-delay: 0.5s, 1.5s;
+                            animation-direction: normal, alternate;
+                            @keyframes move_wwd {
+                            0% {
+                                transform: translate(0px, -50%);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translate(0px, 0%);
+                                opacity: 1;
+                            }
+                            }
+                            @keyframes move_wwd2 {
+                                0% {
+                                    transform: translate(0px, 0%);
+                                }
+                                100% {
+                                    transform: translate(0px, -3%);
+                                }
+                            }`
+
+function WhatWeDo() {
+
+    const [componentVisible, setComponentVisible] = useState(false);
+    return (
     <div
         css={css`
           display: grid;
@@ -51,44 +84,20 @@ const WhatWeDo = () => (
             </div>
             <Link href="/contact"><Button>Learn More</Button></Link>
         </div>
-        <div
-            css={css`
-              padding: 0 10%;
-              align-self: center;
-              justify-self: center;
 
-              animation: move_wwd 0.7s linear, move_wwd2 1s linear infinite;
-              animation-delay: 0s, 1s;
-              animation-direction: normal, alternate;
-              @keyframes move_wwd {
-                0% {
-                    transform: translate(0px, -50%);
-                    opacity: 0;
-                }
-                100% {
-                    transform: translate(0px, 0%);
-                    opacity: 1;
-                }
-              }
-              @keyframes move_wwd2 {
-                  0% {
-                      transform: translate(0px, 0%);
-                  }
-                  100% {
-                      transform: translate(0px, -3%);
-                  }
-              }
-            `}
-        >
-            <Image
-                src="/images/webanah-character2.png"
-                layout="intrinsic"
-                width={654}
-                height={589}
-            />
-        </div>
-
+        <ScrollTrigger onEnter={()=> setComponentVisible(true)}  onExit={() => setComponentVisible(false)}>            
+            <ImgDiv visible={componentVisible}>
+                {console.log(componentVisible)}
+                <Image
+                    src="/images/webanah-character2.png"
+                    layout="intrinsic"
+                    width={654}
+                    height={589}
+                />
+            </ImgDiv>
+        </ScrollTrigger>
     </div>
-)
+);
+}
 
 export default WhatWeDo
