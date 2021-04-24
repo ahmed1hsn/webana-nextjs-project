@@ -24,6 +24,7 @@
         "next-i18next": "^6.0.2",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-visibility-sensor": "^5.1.1",
         "sqlite": "^4.0.21",
         "sqlite3": "^5.0.2"
     },
